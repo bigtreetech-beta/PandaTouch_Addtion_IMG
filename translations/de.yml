@@ -1,0 +1,531 @@
+de: 
+#SETTING PAGE
+  lang_name_t: 'German'
+
+
+  sleep_time_t_2: '2 Min'
+  sleep_time_t_5: '5 Min'
+  sleep_time_t_10: '10 Min'
+  sleep_time_t_15: '15 Min'
+  sleep_time_t_60: '60 Min'
+  sleep_time_t_always: 'Immer An'
+
+  setting_gen_t: 'Allgemein'
+  setting_net_t: 'Netzwerk'
+  setting_gen_t_dev: 'Gerät:'
+  setting_gen_t_man: 'Hersteller:'
+  setting_gen_t_lang: 'Sprache:'
+  setting_gen_t_fw: 'Firmware:'
+  setting_gen_t_slp: 'AutoSleep:'
+  setting_gen_t_backlight: 'Hintergrundbeleuchtung Helligkeit:'
+  setting_gen_t_reb: 'Neustart'
+  setting_gen_t_rst: 'Werkseinstellungen Wiederherstellen'
+#SETTING PAGE END
+
+#BUTTONS
+  btn_cancel: 'Abbrechen'
+  btn_ok: 'OK'
+  btn_restart: 'Neustarten'
+  btn_refresh: 'Aktualisieren'
+  btn_confirm: 'Bestätigen'
+  btn_next: 'Weiter'
+  btn_back: 'Zurück'
+  btn_del: 'Löschen'
+  btn_scan: 'Scannen'
+  btn_factory: 'Werkseinstellung'
+  btn_close: 'Schließen'
+  btn_ignore_all: 'Alle Ignorieren'
+  btn_load: 'Laden'
+  btn_unload: 'Entladen'
+  btn_retry: 'Erneut Versuchen'
+  btn_abort: 'Abbrechen'
+  btn_print: 'Drucken'
+  btn_remove: 'Entfernen'
+  btn_stop: 'Stoppen'
+  btn_pause: 'Pause'
+  btn_resume: 'Fortsetzen'
+  btn_filament: 'Filament'
+  btn_done: 'Fertig'
+  btn_stop_all: 'Alle Stoppen'
+  btn_format: 'Formatieren'
+  btn_disconnect: 'Trennen'
+  btn_edit: 'Bearbeiten'
+  btn_yes: 'Ja'
+  btn_no: 'Nein'
+  btn_reset: 'Zurücksetzen'
+  btn_add_printer: 'Drucker Hinzufügen'
+  btn_add_group: 'Gruppe Hinzufügen'
+  btn_goto_printers: 'Zur Mehrgeräteseite gehen'
+  btn_goto_wifi: 'Zu WLAN-Netzwerk gehen'
+  btn_ignore: 'Ignorieren'
+  btn_goto_login: 'Zur Login-Seite gehen'
+#BUTTONS END
+
+  set_net_wifi_scaned: 'Gescanntes WLAN'
+  welcome_tip: 'Bitte verbinden Sie sich mit dem Internet, indem Sie das WLAN-Netzwerk rechts auswählen und dann das Passwort eingeben. Klicken Sie auf Aktualisieren, wenn Sie das gewünschte Netzwerk nicht sehen. Klicken Sie auf Weiter, sobald Sie mit dem gewünschten Netzwerk verbunden sind.'
+  tip_scan_qrcode: 'Bitte verwenden Sie Ihr Handy, um den QR-Code zu scannen, um das Online-Handbuch zuzugreifen.'
+  loading: 'Wird geladen...'
+  top_wifi_connect: 'Verbinde mit WLAN %s'
+  top_wifi_connect_fail: 'Verbindung zum WLAN fehlgeschlagen: %s'
+  top_wifi_disconnected: 'Von WLAN getrennt: %s'
+  top_print_connecting: 'Verbinde mit Drucker %d: %s'
+  top_print_connected: 'Erfolgreich verbunden mit Drucker %d: %s'
+  top_print_connect_fail: 'Verbindung zum Drucker %d fehlgeschlagen: %s'
+#PRINT
+  panda_touch: 'Panda Touch'
+  printer_model: 'Modell:'
+  printer_name: 'Name:'
+  scan_print_t_acescd: 'Zugangscode:'
+  scan_print_t_ip: 'Drucker-IP:'
+  filament_t_color: 'Filamentfarbe:'
+  filament_t_matrl: 'Filamentmaterial:'
+  nozzle_t_diameter: 'Düsendurchmesser:'
+  nozzle_t_matrl: 'Düsenmaterial:'
+  wifi_c_wait_cancel: 'Warten auf Abbruch...'
+  print_bed_leveling: 'Bett Nivellierung'
+  print_flow_calibration: 'Flusskalibrierung'
+  print_timelapse: 'Zeitraffer'
+  prints_in_sync: 'Drucker synchronisiert: %d'
+  start_print_confirm: |
+   Vor dem Starten des Drucks beachten Sie bitte Folgendes:
+   1. Stellen Sie sicher, dass die Datei für den ausgewählten Drucker/die ausgewählten Drucker geschnitten wurde.
+   2. Stellen Sie sicher, dass die Filamenteinstellungen in der geschnittenen Datei mit dem in den AMS-Slots geladenen Filament übereinstimmen.
+  print_using_ams: 'AMS verwenden'
+  print_ams: 'Spulen halter'
+  print_canceled: 'Abgebrochen'
+  print_finished: 'Abgeschlossen'
+  print_reprint: 'Erneut Drucken'
+  bed_preheating: 'Heizbett Vorheizen'
+  nozzle_clean: 'Düsenkopf reinigen'
+  bed_auto_leveing: 'Automatische Bett-Nivellierung'
+  print_preparing: 'Druck wird vorbereitet'
+  print_t: 'Drucker'
+  print_not_find: 'Keine Drucker gefunden, überprüfen Sie Ihr Netzwerk und scannen Sie erneut'
+  filament_unknown: 'Filamenttyp ist unbekannt, aber es wird benötigt, um diese Aktion auszuführen. Möchten Sie die Filamentinformationen bearbeiten?'
+  printer_add_repeat: 'Dieser Drucker wurde bereits zum Panda Touch hinzugefügt und kann nicht erneut hinzugefügt werden.'
+  printer_has_add: 'Bereits hinzugefügt'
+  printer_busy: |
+   
+   
+   Druckt gerade
+  nozzle_temperature: 'Düsentemperatur'
+  bambu_info_readonly: 'Informationen zum Bambu-Filament werden in RFID gespeichert und sind schreibgeschützt.'
+  setting_slot_not_sup: 'Die Einstellung von Slot-Informationen während des Druckens wird nicht unterstützt.'
+  filament_minimum: 'Mindest'
+  filament_maximum: 'Höchst'
+  filament_unknown_type: 'Unbekannt'
+#PRINT
+
+#TIPS
+  tip_input_optional: '(Optional)'
+  tip_input_name: '(Erforderlich) Geben Sie den Namen Ihres Druckers ein'
+  tip_input_ip: '(Erforderlich) Geben Sie die IP-Adresse Ihres Druckers ein'
+  tip_input_acescd: '(Erforderlich) Geben Sie den Zugangscode ein'
+  tip_input_sn: '(Erforderlich) Geben Sie die SN ein'
+  pop_tip_add_dev: 'Bitte bestätigen Sie, dass Sie diese Druckerverbindung zum Panda Touch hinzufügen möchten'
+  pop_tip_restart: 'Bitte bestätigen Sie, dass Sie das Panda Touch neu starten möchten.'
+  pop_tip_input_password: 'Passwort eingeben'
+  pop_tip_factory: 'Bitte bestätigen Sie, dass Sie die Werkseinstellungen wiederherstellen möchten. Das Panda Touch wird die WLAN-Einstellungen und alle hinzugefügten Drucker vergessen. Ein Neustart wird nach Abschluss durchgeführt.'
+  new_tip_get_info: 'Wie man IP, Zugangscode und SN-Code erhält.'
+  pop_tip_print_abort: 'Bitte bestätigen Sie, ob Sie die aktuellen und nachfolgenden Upload- und Druckaufträge abbrechen möchten.'
+  tip_not_insert_sdcard: 'MicroSD-Karte nicht in den Drucker eingesetzt.'
+  tip_not_insert_usb_flash: 'USB-Flash-Laufwerk nicht eingesetzt.'
+  tip_not_select_print: 'Kein Drucker ausgewählt, bitte wählen Sie mindestens einen Drucker aus, um den Druck zu starten.'
+  tip_remove_refuse: 'Nur "Getrennte" Drucker können gelöscht werden. Bitte setzen Sie diesen Drucker auf "Getrennt", bevor Sie ihn löschen.'
+  tip_remove_confirm: 'Bitte bestätigen Sie, dass Sie diesen Drucker vom Panda Touch entfernen möchten.'
+  tip_master_must: 'Es muss mindestens ein Drucker als "Master" eingestellt sein.'
+  tip_mainly_query: 'Nur ein Drucker kann als "Master" eingestellt werden. Möchten Sie diesen Drucker als "Master" festlegen und den alten "Master"-Drucker auf "Synchronisieren" setzen?'
+  tip_printer_max: 'Panda Touch unterstützt derzeit nur bis zu "%d" Drucker. Sie können eine zweite Panda Touch-Einheit verwenden, um zusätzliche Drucker zu steuern.'
+  tip_pause_all: 'Sind Sie sicher, dass Sie alle laufenden Drucke pausieren möchten?'
+  tip_stop_all: 'Sobald Sie einen Druck stoppen, können Sie ihn nicht fortsetzen. Sind Sie sicher, dass Sie alle laufenden Drucke stoppen möchten?'
+  
+  tip_faild_upload: |
+   Fehler beim Hochladen der Datei, bitte überprüfen Sie Folgendes:
+   1. Ist der Drucker ordnungsgemäß angeschlossen und hat die SD-Karte ausreichend Kapazität.
+   2. Stellen Sie sicher, dass das USB-Laufwerk fest im Panda Touch sitzt.
+   3. Wechseln Sie zu einem Ort mit besserem WLAN-Signal.
+   4. Im Cloud-Modus, überprüfen und bearbeiten Sie bitte die "IP” oder den "Zugangscode”.
+  tip_wifi_disconnected: 'Die WLAN-Verbindung wurde unterbrochen. Bitte stellen Sie sicher, dass Sie sich in einem Bereich mit ausreichender Signalstärke befinden.'
+  tip_wifi_error: 'Verbindung zum aktuellen WLAN fehlgeschlagen, bitte überprüfen Sie die Signalstärke'
+  tip_unload_has_filament: 'Bitte ziehen Sie das Filament auf dem Spulenhalter aus dem Extruder oder überprüfen Sie, ob das Filament im Extruder gebrochen ist. Falls AMS später verwendet werden soll, verbinden Sie bitte das PTFE-Rohr mit dem Kupplungsstück.'
+  tip_unload_has_filament_l: 'Bitte ziehen Sie das Filament auf dem Spulenhalter aus dem Extruder oder überprüfen Sie, ob das Filament im Extruder gebrochen ist. Falls AMS später verwendet werden soll, verbinden Sie bitte das PTFE-Rohr mit dem Kupplungsstück und klicken Sie auf die Schaltfläche "Erneut versuchen".'
+  tip_load_no_filament: 'Bitte füttern Sie das Filament vom Spulenhalter ein, bis der Filament-Sensor des Werkzeugs aktiviert wird.'
+  tip_load_no_filament_l: 'Bitte füttern Sie das Filament vom Spulenhalter ein, bis der Filament-Sensor des Werkzeugs aktiviert wird, und klicken Sie auf die Schaltfläche "Erneut versuchen".'
+  tip_load_filament: 'Bitte beobachten Sie die Düse. Wenn das Filament extrudiert wurde, klicken Sie auf "Fertig"; wenn nicht, schieben Sie das Filament leicht nach vorne und klicken Sie dann auf "Erneut versuchen".'
+  tip_heatbreak_fan: 'Die Drehzahl des Heatbreak-Lüfters ist abnormal.'
+  tip_parsing_gcode: 'Beim Parsen von gcode.3mf gab es ein Problem. Bitte senden Sie den Druckauftrag erneut.'
+  tip_nozzle_temp_malf: 'Fehlerhafte Düsentemperatur.'
+  tip_front_cover: 'Der Druck wurde pausiert, weil die Frontabdeckung des Werkzeugs abgefallen ist. Bitte montieren Sie sie wieder an und klicken Sie auf das Symbol "Fortsetzen", um den Druckauftrag fortzusetzen.'
+  tip_filament_runout: 'Das Filament ist ausgegangen. Bitte laden Sie neues Filament in "Filament" und tippen Sie auf "Fortsetzen", um den Druckauftrag fortzusetzen.'
+  tip_pause_print: 'Sind Sie sicher, dass Sie den laufenden Druck pausieren möchten?'
+  tip_stop_print: 'Sobald Sie einen Druck stoppen, können Sie ihn nicht fortsetzen. Sind Sie sicher, dass Sie den laufenden Druck stoppen möchten?'
+  tip_ams_runout: 'AMS-Filament ist ausgegangen. Bitte setzen Sie ein neues Filament in das AMS ein und klicken Sie auf die Schaltfläche "Erneut versuchen".'
+  tip_ams_overload: 'Der AMS-Hilfsmotor ist überlastet. Bitte überprüfen Sie, ob die Spule oder das Filament blockiert ist. Nach der Fehlersuche klicken Sie auf die Schaltfläche "Erneut versuchen".'
+  tip_failed_feed: 'Das Einführen des Filaments in den Werkzeugkopf ist fehlgeschlagen. Bitte überprüfen Sie, ob das Filament oder die Spule blockiert ist. Nach der Fehlersuche klicken Sie auf die Schaltfläche "Erneut versuchen".'
+  tip_failed_pull: 'Das Herausziehen des Filaments aus dem Extruder ist fehlgeschlagen. Bitte überprüfen Sie, ob der Extruder verstopft ist oder ob das Filament im Extruder gebrochen ist. Nach der Fehlersuche klicken Sie auf die Schaltfläche "Erneut versuchen".'
+  tip_failed_extrude: 'Das Extrudieren des Filaments ist fehlgeschlagen. Bitte überprüfen Sie, ob der Extruder verstopft ist. Nach der Fehlersuche klicken Sie auf die Schaltfläche "Erneut versuchen".'
+  tip_failed_feed_outside: 'Das Einführen des Filaments außerhalb des AMS ist fehlgeschlagen. Bitte schneiden Sie das Ende des Filaments gerade ab und überprüfen Sie, ob die Spule blockiert ist. Nach der Fehlersuche klicken Sie auf die Schaltfläche "Erneut versuchen".'
+  tip_select_model: 'Bitte wählen Sie das Modell des Druckers aus.'
+  tip_ams_busy: 'Kann keine Filamentinformationen lesen; das AMS ist beschäftigt. Bitte versuchen Sie es später noch einmal.'
+  tip_ams_reading: 'Das AMS ist beschäftigt, Filamentinformationen zu lesen; bitte versuchen Sie es später noch einmal.'
+  tip_ams_tray_empty: 'Dieses Fach ist leer. Bitte versuchen Sie es erneut, nachdem Sie Filament eingefügt haben.'
+  tip_firmware: 'Bitte scannen Sie den Code, um die Firmware-Versionen und Anweisungen zur Aktualisierung der Firmware anzuzeigen.'
+#TIPS END
+
+#NOTIFY
+  notify_center_t: 'Benachrichtigungscenter'
+  notify_cnt_t: 'Anzahl der Benachrichtigungen:'
+  notify_remind: 'Bitte scannen Sie den Code, um mögliche Lösungen anzuzeigen, oder klicken Sie auf die Schaltfläche "Zum Drucker wechseln", um diesen Drucker als "Master"-Drucker festzulegen.'
+  notify_remind_go_print: 'Zum Drucker wechseln'
+  notify_unknow_state: 'Panda Touch unbekannter Statuscode.'
+  
+  00x0300100000020001: 'Die Resonanzfrequenz der %s-Achse ist niedrig. Der Timing-Riemen könnte locker sein.'
+  00x0300100000020002: 'Der 1. Ordnung mechanische Resonanzmodus der %s-Achse weicht stark von der letzten Kalibrierung ab. Bitte führen Sie später die Maschinenkalibrierung erneut durch.'
+  00x03000F0000010001: 'Die Daten des Beschleunigungssensors sind nicht verfügbar.'
+  00x03000D000001000B: 'Der Z-Achsen-Motor scheint beim Hochbewegen steckengeblieben zu sein.'
+  00x03000D0000010003: 'Die Bauplatte ist nicht richtig platziert. Bitte passen Sie sie an.'
+  00x03000D0000010004: 'Die Bauplatte ist nicht richtig platziert. Bitte passen Sie sie an.'
+  00x03000D0000010005: 'Die Bauplatte ist nicht richtig platziert. Bitte passen Sie sie an.'
+  00x03000D0000010006: 'Die Bauplatte ist nicht richtig platziert. Bitte passen Sie sie an.'
+  00x03000D0000010007: 'Die Bauplatte ist nicht richtig platziert. Bitte passen Sie sie an.'
+  00x03000D0000010008: 'Die Bauplatte ist nicht richtig platziert. Bitte passen Sie sie an.'
+  00x03000D0000010009: 'Die Bauplatte ist nicht richtig platziert. Bitte passen Sie sie an.'
+  00x03000D000001000A: 'Die Bauplatte ist nicht richtig platziert. Bitte passen Sie sie an.'
+  00x03000D0000020001: 'Das Homing der Heizplatte ist abnormal.'
+  00x03000A0000010005: 'Der Kraftsensor %s hat unerwartete kontinuierliche Kräfte erkannt. Die Heizplatte könnte blockiert sein, oder die analoge Front-End-Schaltung könnte defekt sein.'
+  00x03000A0000010004: 'Beim Testen der Empfindlichkeit des Kraftsensors %s wurde eine äußere Störung erkannt. Die Heizplatte könnte etwas außerhalb der Heizplatte berührt haben.'
+  00x03000A0000010003: 'Die Empfindlichkeit des Kraftsensors der Heizplatte %s ist zu niedrig.'
+  00x03000A0000010002: 'Die Empfindlichkeit des Kraftsensors der Heizplatte %s ist niedrig.'
+  00x03000A0000010001: 'Die Empfindlichkeit des Kraftsensors der Heizplatte %s ist zu hoch.'
+  00x0300040000020001: 'Die Geschwindigkeit des Bauteilkühlgebläses ist zu langsam oder gestoppt.'
+  00x0300030000020002: 'Die Geschwindigkeit des Hotend-Lüfters ist niedrig.'
+  00x0300030000010001: 'Die Geschwindigkeit des Hotend-Lüfters ist zu niedrig oder gestoppt.'
+  00x0300060000010001: 'Motor-%s hat einen offenen Stromkreis. Es könnte eine lose Verbindung vorliegen oder der Motor könnte defekt sein.'
+  00x0300060000010002: 'Motor-%s hat einen Kurzschluss. Er könnte defekt sein.'
+  00x0300060000010003: 'Der Widerstand von Motor-%s ist abnormal, der Motor könnte defekt sein.'
+  00x0300010000010007: 'Die Temperatur der Heizplatte ist abnormal; der Sensor könnte einen offenen Stromkreis haben.'
+  00x0300130000010001: 'Der Stromsensor von Motor-%s ist abnormal. Dies könnte durch einen Fehler der Hardware-Sampling-Schaltung verursacht werden.'
+  00x0300180000010005: 'Der Z-Achsen-Motor scheint sich während der Bewegung festgefahren zu haben. Bitte überprüfen Sie, ob Fremdkörper auf den Z-Schlitten oder den Z-Timing-Riemenscheiben vorhanden sind.'
+  00x0300190000010001: 'Der Wirbelstromsensor an der Y-Achse ist nicht verfügbar, das Kabel sollte defekt sein.'
+  00x0300190000020002: 'Die Empfindlichkeit des Y-Achsen-Wirbelstromsensors ist zu niedrig.'
+  00x0300400000020001: 'Die Datenübertragung über den seriellen Anschluss ist abnormal; das Softwaresystem könnte fehlerhaft sein.'
+  00x0300410000010001: 'Die Systemspannung ist instabil; die Stromausfall-Schutzfunktion wurde ausgelöst.'
+  00x0300020000010001: 'Die Düsentemperatur ist abnormal, der Heizkörper könnte einen Kurzschluss haben.'
+  00x0300020000010002: 'Die Düsentemperatur ist abnormal, der Heizkörper könnte einen offenen Stromkreis haben.'
+  00x0300020000010003: 'Die Düsentemperatur ist abnormal, der Heizkörper ist überhitzt.'
+  00x0300020000010006: 'Die Düsentemperatur ist abnormal, der Sensor könnte einen Kurzschluss haben.'
+  00x0300020000010007: 'Die Düsentemperatur ist abnormal, der Sensor könnte einen offenen Stromkreis haben.'
+  00x0300120000020001: 'Die Frontabdeckung des Werkzeugkopfs ist abgefallen.'
+  00x0300180000010001: 'Der Wert des Extrusionskraftsensors ist niedrig, die Düse scheint nicht installiert zu sein.'
+  00x0300180000010002: 'Die Empfindlichkeit des Extrusionskraftsensors ist niedrig, das Hotend könnte nicht korrekt installiert sein.'
+  00x0300180000010003: 'Der Extrusionskraftsensor ist nicht verfügbar, die Verbindung zwischen dem MC und TH könnte defekt sein oder der Sensor ist defekt.'
+  00x0300180000010004: 'Die Daten des Extrusionskraftsensors sind abnormal, der Sensor könnte defekt sein.'
+  00x03001A0000020001: 'Die Düse ist im Filament eingewickelt oder die Bauplatte ist falsch platziert.'
+  00x03001A0000020002: 'Der Extrusionskraftsensor erkennt, dass die Düse verstopft ist.'
+  00x0C00010000010001: 'Der Mikro-Lidar-Kamera ist offline.'
+  00x0C00010000020002: 'Der Mikro-Lidar-Kamera ist fehlerhaft.'
+  00x0C00010000010003: 'Mikro-Lidar-Synchronisation abnormal.'
+  00x0C00010000010004: 'Mikro-Lidar-Objektiv verschmutzt.'
+  00x0C00010000010005: 'Mikro-Lidar-OTP-Parameter abnormal.'
+  00x0C00010000020006: 'Mikro-Lidar-extrinsische Parameter abnormal.'
+  00x0C00010000020007: 'Mikro-Lidar-Laserparameter haben sich verschoben.'
+  00x0C00010000020008: 'Kammerkamera offline.'
+  00x0C00010000010009: 'Kammerkamera verschmutzt.'
+  00x0C0001000001000A: 'Das Mikro-Lidar-LED könnte defekt sein.'
+  00x0C0001000002000B: 'Fehler bei der Kalibrierung des Mikro-Lidar.'
+  00x0C00020000010001: 'Laser nicht eingeschaltet.'
+  00x0C00020000020002: 'Laser zu dick.'
+  00x0C00020000020003: 'Laser nicht hell genug.'
+  00x0C00020000020004: 'Die Düsenhöhe scheint zu niedrig zu sein.'
+  00x0C00020000010005: 'Ein neuer Mikro-Lidar wurde erkannt.'
+  00x0C00020000020006: 'Die Düsenhöhe scheint zu hoch zu sein.'
+  00x0C00030000020001: 'Fehler bei der Messung der Filamentexposition.'
+  00x0C00030000020002: 'Die Inspektion der ersten Schicht wurde aufgrund abnormaler Lidar-Daten beendet.'
+  00x0C00030000020004: 'Die Inspektion der ersten Schicht wird für den aktuellen Druckauftrag nicht unterstützt.'
+  00x0C00030000020005: 'Zeitüberschreitung bei der Inspektion der ersten Schicht.'
+  00x0C00030000030006: 'Die gereinigten Filamente haben sich aufgehäuft.'
+  00x0C00030000030007: 'Mögliche Mängel der ersten Schicht.'
+  00x0C00030000030008: 'Mögliche Spaghetti-Mängel.'
+  00x0C00030000010009: 'Modul zur Inspektion der ersten Schicht neu gestartet.'
+  00x0C0003000003000B: 'Inspektion der ersten Schicht.'
+  00x0C0003000002000C: 'Marker auf der Bauplatte nicht erkannt.'
+  00x0500010000020001: 'Die Medienpipeline ist fehlerhaft.'
+  00x0500010000020002: 'USB-Kamera ist nicht verbunden.'
+  00x0500010000020003: 'USB-Kamera ist fehlerhaft.'
+  00x0500010000030004: 'Nicht genügend Speicher auf der SD-Karte.'
+  00x0500010000030005: 'Fehler auf der SD-Karte.'
+  00x0500010000030006: 'SD-Karte nicht formatiert.'
+  00x0500020000020001: 'Fehler beim Herstellen der Internetverbindung, bitte überprüfen Sie die Netzwerkverbindung.'
+  00x0500020000020005: 'Fehler beim Herstellen der Internetverbindung, bitte überprüfen Sie die Netzwerkverbindung.'
+  00x0500020000020002: 'Fehler beim Anmelden am Gerät.'
+  00x0500020000020004: 'Unbefugter Benutzer.'
+  00x0500020000020006: 'Liveview-Dienst ist fehlerhaft.'
+  00x0500030000010001: 'Das MC-Modul ist fehlerhaft. Bitte starten Sie das Gerät neu.'
+  00x0500030000010002: 'Das Werkzeugkopf-Modul ist fehlerhaft. Bitte starten Sie das Gerät neu.'
+  00x0500030000010003: 'Das AMS-Modul ist fehlerhaft. Bitte starten Sie das Gerät neu.'
+  00x050003000001000A: 'Der Systemzustand ist abnormal. Bitte stellen Sie die Werkseinstellungen wieder her.'
+  00x050003000001000B: 'Der Bildschirm ist fehlerhaft.'
+  00x050003000002000C: 'Fehler bei der drahtlosen Hardware: Bitte schalten Sie WiFi aus/ein oder starten Sie das Gerät neu.'
+  00x0500040000010001: 'Fehler beim Herunterladen des Druckauftrags. Bitte überprüfen Sie Ihre Netzwerkverbindung.'
+  00x0500040000010002: 'Fehler beim Melden des Druckstatus. Bitte überprüfen Sie Ihre Netzwerkverbindung.'
+  00x0500040000010003: 'Der Inhalt der Druckdatei ist unlesbar. Bitte senden Sie den Druckauftrag erneut.'
+  00x0500040000010004: 'Die Druckdatei ist nicht autorisiert.'
+  00x0500040000010006: 'Fehler beim Fortsetzen des vorherigen Drucks.'
+  00x0500040000020007: 'Die Bett-Temperatur überschreitet die Vitrifikationstemperatur des Filaments, was zu einer Verstopfung der Düse führen kann.'
+  00x0700010000010001: 'Der AMS%s Hilfsmotor hat sich verschoben. Das Extrusionsrad könnte abgenutzt sein, oder das Filament könnte zu dünn sein.'
+  00x0700010000010003: 'Die Drehmomentregelung des AMS%s Hilfsmotors funktioniert nicht richtig. Der Stromsensor könnte defekt sein.'
+  00x0700010000010004: 'Die Geschwindigkeitsregelung des AMS%s Hilfsmotors funktioniert nicht richtig. Der Geschwindigkeitssensor könnte defekt sein.'
+  00x0700010000020002: 'Der AMS%s Hilfsmotor ist überlastet. Das Filament könnte verheddert oder blockiert sein.'
+  00x0700020000010001: 'Fehler bei der Filamentgeschwindigkeit und -länge des AMS%s. Die Filamentodometrie könnte fehlerhaft sein.'
+  00x0700100000010001: 'Der AMS%s Slot%s Motor hat sich verschoben. Das Extrusionsrad könnte fehlerhaft sein oder das Filament könnte zu dünn sein.'
+  00x0700100000010003: 'Die Drehmomentregelung des AMS%s Slot%s Motors funktioniert nicht richtig. Der Stromsensor könnte defekt sein.'
+  00x0700100000020002: 'Der AMS%s Slot%s Motor ist überlastet. Das Filament könnte verheddert oder blockiert sein.'
+  00x0700200000020001: 'Filament im AMS%s Slot%s ist ausgegangen.'
+  00x1200200000020001: 'Filament im AMS%s Slot%s ist ausgegangen.'
+  00x0700200000020002: 'Der AMS%s Slot%s ist leer.'
+  00x0700200000020003: 'Das Filament im AMS%s Slot%s könnte im AMS defekt sein.'
+  00x0700200000020004: 'Das Filament im AMS%s Slot%s könnte im Werkzeugkopf defekt sein.'
+  00x0700200000020005: 'Filament im AMS%s Slot%s ist ausgegangen, und das Reinigen des alten Filaments verlief abnormal; bitte überprüfen Sie, ob das Filament im Werkzeugkopf blockiert ist.'
+  00x0700200000030001: 'Filament im AMS%s Slot%s ist ausgegangen. Bitte warten Sie, während das alte Filament gereinigt wird.'
+  00x0700200000030002: 'Filament im AMS%s Slot%s ist ausgegangen und automatisch auf den Slot mit demselben Filament umgeschaltet.'
+  00x0700400000020001: 'Das Filamentpuffer-Signal ist verloren gegangen. Das Kabel oder der Positionssensor könnten fehlerhaft sein.'
+  00x0700400000020002: 'Das Positionssignal des Filamentpuffers ist fehlerhaft. Der Positionssensor könnte fehlerhaft sein.'
+  00x0700400000020003: 'Die Kommunikation des AMS-Hubs ist abnormal. Das Kabel könnte nicht gut verbunden sein.'
+  00x0700400000020004: 'Das Filamentpuffer-Signal ist abnormal. Die Feder könnte blockiert sein oder das Filament könnte verheddert sein.'
+  00x0700450000020001: 'Der Filament-Schneider-Sensor ist fehlerhaft. Der Sensor könnte getrennt oder beschädigt sein.'
+  00x0700450000020002: 'Der Schneideabstand des Filament-Schneiders ist zu groß. Der XY-Motor könnte Schritte verlieren.'
+  00x0700450000020003: 'Der Griff des Filament-Schneiders hat sich nicht gelöst. Der Griff oder die Klinge könnte blockiert sein.'
+  00x0700510000030001: 'Das AMS ist deaktiviert; bitte laden Sie Filament aus dem Spulenhalter.'
+  00x0700500000020001: 'Die Kommunikation des AMS%s ist abnormal. Bitte überprüfen Sie das Verbindungskabel.'
+  00x0700600000020001: 'Der AMS%s Slot%s ist überlastet. Das Filament könnte verheddert oder die Spule könnte blockiert sein.'
+  00x1200100000020002: 'Der AMS%s Slot%s Motor ist überlastet. Das Filament könnte verheddert oder blockiert sein.'
+  00x1200800000020001: 'Das Filament im AMS%s Slot%s könnte verheddert oder blockiert sein.'
+  00x07FF200000020001: 'Externes Filament ist ausgegangen; bitte laden Sie neues Filament.'
+  00x07FF200000020002: 'Externes Filament fehlt; bitte laden Sie neues Filament.'
+  00x07FF200000020004: 'Bitte ziehen Sie das Filament auf dem Spulenhalter aus dem Extruder.'
+  00x12FF200000020007: 'Fehler beim Überprüfen des Filamentstandorts im Werkzeugkopf. Bitte klicken Sie für weitere Hilfe.'
+  00x1200200000020006: 'Fehler beim Extrudieren des AMS%s Slot%s Filaments. Der Extruder könnte verstopft sein oder das Filament könnte zu dünn sein, was zu einem Abrutschen des Extruders führt.'
+#NOTIFY END
+
+#CONTROL
+  ctl_top_t_temp_axis: 'Temperatur/Achsenbewegung'
+  ctl_top_t_filament: 'Filament'
+  ctl_t_part: 'Teil'
+  ctl_t_aux: 'Hilfs'
+  ctl_t_chamber: 'Kammer'
+  sw_t_on: 'Ein'
+  sw_t_off: 'Aus'
+  ctl_t_speed: 'Druckgeschwindigkeit'
+  ctl_t_speed_silent: 'Leise'
+  ctl_t_speed_standard: 'Standard'
+  ctl_t_speed_sport: 'Sport'
+  ctl_t_speed_ludicrous: 'Verrückt'
+  ctl_t_extruder: 'Extruder'
+  ctl_t_temp_high: 'Darf %ld℃ nicht überschreiten'
+  ctl_t_filament_t_tip: 'Hinweis'
+  ctl_t_filament_tip: 'Bitte stellen Sie vor dem Einziehen des Filaments sicher, dass es in die Düse geschoben wurde.'
+  ctl_t_to_load: 'Filament laden'
+  ctl_t_to_unload: 'Filament entfernen'
+  ctl_t_heat_nozzle_temp: 'Düse erhitzen'
+  ctl_t_push_new_filament: 'Neues Filament in den Extruder einführen'
+  ctl_t_grab_new_filament: 'Extruder nimmt neues Filament auf'
+  ctl_t_purge_old_filament: 'Altes Filament entfernen'
+  ctl_t_cut_filament: 'Filament schneiden'
+  ctl_t_back_filament: 'Aktuelles Filament zurückziehen'
+  content_empty: 'Leer'
+  tpu_not_supported: 'AMS unterstützt "%s %s" nicht.'
+  cf_gf_warning: '"%s %s" Filament ist hart und spröde. Es bricht leicht oder klemmt im AMS; bitte vorsichtig verwenden.'
+  pva_warning: 'Feuchtes "%s %s" wird weich und kann im AMS klemmen; bitte vor der Verwendung trocknen.'
+
+#MQTT
+  ctl_t_mqtt_ctl_mode: 'Kontrollmodus'
+  ctl_t_mqtt_statu_master: 'Master'
+  ctl_t_mqtt_statu_slave: 'Slave'
+  ctl_t_mqtt_status_sync: 'Nur hören'
+  ctl_t_mqtt_disconected: 'Getrennt'
+  printer_connecting: 'Der Drucker wird derzeit verbunden.'
+  printer_disconnected: 'Der Drucker ist getrennt.'
+  printer_connected: 'Der Drucker ist erfolgreich verbunden.'
+  mqtt_login_failed: |
+   Verbindung zum Drucker fehlgeschlagen!
+   Möglicherweise ist der "Pairing-Code" falsch. Klicken Sie auf "Bearbeiten", um den "Pairing-Code" zu überprüfen und neu einzugeben.
+   Scannen Sie den QR-Code, um mögliche Lösungen zu sehen.
+  mqtt_never_connected: |
+   Verbindung zum Drucker fehlgeschlagen!
+   Bitte stellen Sie sicher, dass der Drucker eingeschaltet ist und sich im selben lokalen Netzwerk wie Panda Touch befindet, oder klicken Sie auf "Bearbeiten", um "IP" und "SN" zu überprüfen und neu einzugeben.
+   Scannen Sie den QR-Code, um mögliche Lösungen zu sehen.
+  mqtt_master_changed: |
+   Verbindung zum Drucker fehlgeschlagen!
+   Bitte stellen Sie sicher, dass der Drucker eingeschaltet ist und sich im selben lokalen Netzwerk wie Panda Touch befindet, oder klicken Sie auf "Bearbeiten", um "IP" und "SN" zu überprüfen und neu einzugeben.
+   Da dies der "Master" ist, wird ein anderer Drucker in der Gruppe vorübergehend als "Master" zugewiesen.
+   Wenn dieser Drucker ausgeschaltet ist, ignorieren Sie diese Nachricht.
+   Scannen Sie den QR-Code, um mögliche Lösungen zu sehen.
+  mqtt_master_error: |
+   Verbindung zum Drucker fehlgeschlagen!
+   Bitte stellen Sie sicher, dass der Drucker eingeschaltet ist und sich im selben lokalen Netzwerk wie Panda Touch befindet, oder klicken Sie auf "Bearbeiten", um "IP" und "SN" zu überprüfen und neu einzugeben.
+   Da dies der "Master" ist und keine anderen verbundenen Drucker in der Gruppe verfügbar sind, können Sie Panda Touch vor der Behebung dieses Problems nicht verwenden.
+   Scannen Sie den QR-Code, um mögliche Lösungen zu sehen.
+  mqtt_slave: |
+   Verbindung zum Drucker fehlgeschlagen!
+   Bitte stellen Sie sicher, dass der Drucker eingeschaltet ist und sich im selben lokalen Netzwerk wie Panda Touch befindet, oder klicken Sie auf "Bearbeiten", um "IP" und "SN" zu überprüfen und neu einzugeben.
+   Dieser Drucker ist kein "Master" und kann nicht auf den "Master" zugreifen oder ihm folgen.
+   Wenn der Drucker ausgeschaltet ist, ignorieren Sie diese Nachricht.
+   Scannen Sie den QR-Code, um mögliche Lösungen zu sehen.
+  mqtt_not_online: |
+   Verbindung zum Drucker fehlgeschlagen!
+   Bitte stellen Sie sicher, dass der Drucker eingeschaltet ist und sich im selben lokalen Netzwerk wie Panda Touch befindet.
+   Scannen Sie den QR-Code, um mögliche Lösungen zu sehen.
+#MQTT END
+
+#FILE
+  file_t_usb_flash_driver: 'USB-Stick'
+  file_t_name: 'Name'
+  file_t_date: 'Datum'
+  file_t_size: 'Größe'
+  file_s_transmitting: 'Übertragung läuft'
+  file_s_printers_in_sync: 'Drucker synchronisiert: %d/%d'
+  file_s_failed: 'Fehlgeschlagen'
+  file_s_printing: 'Drucken'
+  file_s_waiting: 'Wartet'
+#FILE END
+
+#GUID
+  guid_t_start: 'Start'
+  guid_c_start: 'Schalten Sie das Original-Display von Bambu Lab ein'
+  guid_t_get_ip_access: 'IP und Pairing-Code abrufen'
+  guid_c_get_ip_access_wlan: 'Wählen Sie das Netzwerk über die Tasten auf dem Display aus und klicken Sie auf "OK", um fortzufahren.'
+  guid_c_get_ip_access_enter: 'Geben Sie IP und Pairing-Code im entsprechenden Eingabefeld von Panda Touch ein.'
+  guid_t_get_sn: 'SN abrufen'
+  guid_c_get_sn_return: 'Drücken Sie die Zurück-Taste, um zum Einstellungsbildschirm zurückzukehren.'
+  guid_c_get_sn_enter: 'Wählen Sie das Gerät über die Tasten auf dem Display aus und klicken Sie auf "OK", um fortzufahren.'
+  guid_c_get_sn_enter_code: 'Das ist der SN-Code. Bitte geben Sie diesen im entsprechenden Eingabefeld von Panda Touch ein.'
+  guid_t_completed: |
+   ; )
+   Herzlichen Glückwunsch, Sie haben das Panda Touch Tutorial abgeschlossen. Genießen Sie die Funktionen!
+  guid_c_completed: 'Tippen Sie auf einen leeren Bereich des Bildschirms, um zur Verbindungsoberfläche zurückzukehren. Geben Sie dann die Druckerinformationen ein.'
+  sn: 'SN:'
+  guid_unable_find: 'Druckereinstellungen nicht gefunden?'
+  guide_select_lang: 'Bitte wählen Sie die Sprache für Panda Touch'
+  guide_ota_not_finished: 'OTA ist noch nicht abgeschlossen'
+  guide_ota_remind: |
+   Bitte verwenden Sie einen Computer (dies kann ein Computer oder mobiles Gerät mit iOS, Android oder einem anderen Betriebssystem sein), der sich im selben WiFi-Netzwerk befindet.
+    • Geben Sie die IP-Adresse von Panda Touch in den Webbrowser des Computers ein und klicken Sie auf "Update-Datei".
+    • Klicken Sie auf "Datei auswählen" und wählen Sie die zuvor heruntergeladene .img-Datei aus.
+    • Panda Touch wird das Update automatisch starten.
+  guid_ota_connect_wifi: |
+   PandaTouch kann derzeit nicht mit WiFi verbunden werden
+   Bitte klicken Sie auf das WiFi-Netzwerk auf der rechten Seite und geben Sie das Passwort ein, um sich mit WiFi zu verbinden. Wenn das gewünschte Netzwerk nicht angezeigt wird, klicken Sie auf "Aktualisieren".
+  #Andere einfache Übersetzungen für chinesische Zeichen
+#GUID END
+
+#CLOUD START
+  tip_about_region: 'Bitte wählen Sie die Region vor dem Anmelden aus. Die Region sollte mit Ihrem Konto übereinstimmen.'
+  tip_del_account: 'Möchten Sie das Konto löschen? PandaTouch wird die an das Konto gebundenen Drucker auf lokale Kommunikation umstellen.'
+  tip_input_phone: 'Bitte Telefonnummer eingeben'
+  tip_input_email: 'Bitte E-Mail-Adresse eingeben'
+  #tip_input_password: 'Bitte Passwort eingeben'
+  t_region: 'Region:'
+  t_account: 'Konto:'
+  t_password: 'Passwort:'
+  t_region_china: 'China'
+  t_region_global: 'Global'
+  tip_phone_incorrect: 'Bitte geben Sie eine gültige Telefonnummer ein'
+  tip_email_incorrect: 'Bitte geben Sie eine gültige E-Mail-Adresse ein'
+  tip_account_not_reg: 'Anmeldung fehlgeschlagen, Konto nicht registriert.'
+  tip_password_incorrect: 'Anmeldung fehlgeschlagen, Passwort falsch.'
+  tip_network_error: 'Anmeldung fehlgeschlagen, Netzwerkfehler.'
+  tip_login_ok: |
+   Anmeldung beim Cloud-Server erfolgreich!
+   
+   Möchten Sie alle vorhandenen Drucker in den Cloud-Modus umwandeln? Wählen Sie "Ja" nur, wenn Sie keine Drucker im "LAN-Modus" verwenden. Wenn Sie Drucker im "LAN-Modus" verwenden, fügen Sie jeden Drucker manuell zur Cloud hinzu, indem Sie die Kommunikationseinstellungen bearbeiten.
+  tip_account_sync_ok: 'Der Drucker wurde erfolgreich in den Cloud-Modus umgestellt. Sie können den aktuellen Kommunikationsstatus jedes Druckers auf der Mehrgeräte-Seite anzeigen.'
+  tip_account_sync_error: 'Einige Drucker konnten nicht in den Cloud-Modus umgestellt werden. Bitte überprüfen Sie Ihre WiFi- und Cloud-Modus-Einstellungen und versuchen Sie es erneut.'
+  tip_account_sync_zero: 'Derzeit sind keine Cloud-Drucker im Konto vorhanden. Bitte fügen Sie Drucker zu diesem Konto hinzu und melden Sie sich erneut an.'
+  tip_printer_without_cloud: 'Dieser Drucker ist noch nicht an das Konto gebunden. Bitte fügen Sie den Drucker vor der Aktivierung der Cloud-Funktion mit BambuLab Studio oder Handy hinzu.'
+  tip_printer_login_account: 'Bitte melden Sie sich zunächst bei einem Konto an.'
+  tip_account_error: 'Es gibt ein Problem mit Ihrem Konto. Bitte überprüfen Sie, ob sich Ihr Kontoname oder Passwort geändert hat. Vergewissern Sie sich auch, dass Ihre Kontoregion mit Ihrem aktuellen Standort übereinstimmt.'
+  tip_account_network_error: 'Es gibt ein Problem mit Ihrer Netzwerkverbindung. Bitte überprüfen Sie, ob sich das Netzwerkpasswort geändert hat, und versuchen Sie es erneut, um die Cloud-Verbindung des Druckers wiederherzustellen.'
+  t_login_bambu: 'Bambu-Konto anmelden'
+  tip_convert_to_cloud: 'Derzeit wird der Drucker unter diesem Konto in den Cloud-Modus umgewandelt. Bitte warten.'
+  t_enable_could: 'Cloud-Modus'
+  tip_wifi_not_connected: 'Wi-Fi-Verbindung ist getrennt. Bitte verbinden Sie sich zuerst mit Wi-Fi.'
+  tip_printer_work_in_cloud: 'Der Drucker arbeitet im Cloud-Modus.'
+  tip_printer_work_in_local: 'Der Drucker arbeitet im LAN-Modus.'
+  tip_ftp_ip_invalid: 'Stellen Sie sicher, dass Sie sich im selben LAN wie der Drucker befinden, und überprüfen Sie "IP" oder "Pairing-Code" und bearbeiten Sie diese bei Bedarf.'
+  tip_ftp_not_find: 'Keine .3mf-Datei gefunden.'
+  tip_group_printer_cloud_mode: 'Drucker %d: %s arbeitet im Cloud-Modus.'
+  tip_group_printer_local_mode: 'Drucker %d: %s arbeitet im LAN-Modus.'
+  tip_group_work_in_cloud: 'Die Druckergruppe arbeitet im Cloud-Modus.'
+  tip_group_work_in_local: 'Die Druckergruppe arbeitet im LAN-Modus.'
+#CLOUD END
+
+#NEW ADD
+  tip_printer_group_max: 'Panda Touch unterstützt derzeit bis zu %d Druckergruppen'
+  tip_one_master_at_least: 'In einer Druckergruppe muss mindestens ein Drucker als Master verbleiben.'
+  tip_one_select_at_least: |
+   In einer Druckergruppe muss mindestens ein Master-Drucker vorhanden sein.
+   Um diese Druckergruppe zu löschen, führen Sie die Aktion auf dem Druckerauswahlbildschirm aus.
+  tip_remove_group_confirm: 'Bitte bestätigen Sie, ob Sie diese Druckergruppe löschen möchten.'
+  tip_group_same_name: 'Es gibt bereits einen gleichen Gruppennamen. Bitte umbenennen.'
+  tip_printer_in_group: 'Drucker wurde zur Gruppe hinzugefügt. Bitte zuerst innerhalb der Gruppe entfernen.'
+  tip_reprint_group_printer: 'Dies wird die Datei nur auf diesem Drucker erneut drucken. Wenn Sie auf allen Druckern in der Gruppe drucken möchten, warten Sie, bis alle Drucker fertig sind, und starten Sie den Druck mit dem normalen Verfahren.'
+  tip_reprint_printer: 'Möchten Sie die Datei auf diesem Drucker erneut drucken?'
+  tip_waiting_print_finished: 'Bitte stoppen Sie den aktuellen Druckauftrag, bevor Sie einen neuen Druckauftrag beginnen.'
+  tip_group_connected: 'Die Druckergruppe wurde erfolgreich verbunden.'
+  tip_group_printer_disconnected: 'Drucker %d: %s wurde getrennt.'
+  tip_group_printer_connecting: 'Drucker %d: %s wird verbunden.'
+  tip_group_printer_printing: 'Drucker %d: %s druckt.'
+  tip_group_printer_temp_too_high: 'Drucker %d: %s Hotend-Temperatur %d ℃.'
+  tip_group_printer_file_config: 'Möchten Sie die Datei %s drucken? Bitte wählen Sie die Druckfunktion aus, die Sie aktivieren möchten.'
+  tip_group_power_off: 'Möchten Sie die Drucker in der Gruppe ausschalten?'
+  tip_group_reset_power_usage: 'Möchten Sie den Stromverbrauch der Drucker in der Gruppe zurücksetzen, die an PWR gebunden sind?'
+  tip_group_power_off_not_online: 'Einige Drucker in der Gruppe sind getrennt. Möchten Sie das Netzteil weiterhin ausschalten?'
+  tip_group_printing_not_idle: 'Einige Drucker in der Gruppe drucken gerade. Das Ausschalten der Drucker kann zu Blockaden führen. Bitte warten Sie, bis das Hotend abgekühlt ist, bevor Sie das Netzteil ausschalten. Möchten Sie fortfahren?'
+  tip_group_temp_too_high_confirm: 'Einige Drucker in der Gruppe haben eine Hotend-Temperatur über 50 Grad. Das Ausschalten der Drucker kann zu Blockaden führen. Bitte warten Sie, bis das Hotend abgekühlt ist, bevor Sie das Netzteil ausschalten. Möchten Sie fortfahren?'
+  t_is_printing: 'Wird gedruckt'
+  t_is_idle: 'Leerlauf'
+  tip_enter_group_name: 'Bitte geben Sie den Gruppennamen ein:'
+  tip_move_confirm: 'Dieser Drucker/Druckergruppe druckt gerade und kann nicht verschoben werden.'
+  tip_always_sleep: 'Diese Einstellung kann den Bildschirm beschädigen. Möchten Sie fortfahren?'
+  tip_bind_power: |
+   Halten Sie die Panda PWR-Taste gedrückt, bis das blaue Licht blinkt, und bringen Sie Panda Touch an die Panda PWR an, um die Verbindung herzustellen.
+  tip_remove_keep_one: 'Bitte mindestens einen Drucker behalten'
+  tip_remove_printer_with_power: 'Dieser Drucker ist an PWR gebunden. Möchten Sie weiterhin löschen?'
+  tip_about_power: |
+   Panda PWR
+   Intelligente automatische Abschaltung, Echtzeit-Leistungsüberwachung, Energieverbrauchsverfolgung, Design mit zwei USB-A-Anschlüssen. Bitte scannen Sie den QR-Code für weitere Informationen.
+  tip_power_off_not_online_confirm: 'Drucker ist getrennt. Möchten Sie das Netzteil ausschalten?'
+  tip_power_off_temp_too_high_confirm: 'Hotend-Temperatur über 50 Grad festgestellt. Das Ausschalten der Drucker kann zu Blockaden führen. Bitte warten Sie, bis das Hotend abgekühlt ist, bevor Sie das Netzteil ausschalten. Möchten Sie fortfahren?'
+  tip_power_off_confirm: 'Möchten Sie das Netzteil des Druckers ausschalten?'
+  tip_auto_power_off_confirm: 'Nach Abschluss des Drucks, wenn die Düsentemperatur unter 50 Grad liegt, wird der Drucker automatisch ausgeschaltet.'
+  t_auto_power_off: 'Automatische Abschaltung:'
+  t_min: 'Minuten'
+  t_countdown: 'Countdown:'
+  t_power: 'Strom'
+  tip_know_power: 'Was ist Panda PWR'
+  tip_add_power: 'Panda PWR hinzufügen'
+  t_voltage: 'Spannung:'
+  t_current: 'Strom:'
+  t_power_2: 'Leistung:'
+  t_power_usage: 'Energieverbrauch:'
+  t_printer: 'Drucker-Hauptgerät:'
+  t_power_wifi: 'WiFi-Name:'
+  t_power_usb_follow: 'USB1 folgt Druckerlicht:'
+  t_usb_config_off: 'Aus'
+  t_usb_config_on: 'Ein'
+  t_must_high: 'Der Eingabewert muss größer als %ld sein'
+  t_must_less: 'Der Eingabewert muss kleiner als %ld sein'
+  t_power_printer_no: 'Nummer'
+  tip_confirm_bind_power: 'Möchten Sie die Bindung mit Panda PWR akzeptieren?'
+  tip_confirm_unbind_power: 'Möchten Sie die Bindung mit Panda PWR aufheben?'
+  t_reset_power_usage: |
+   Zurücksetzen
+   Energieverbrauch
+  t_reset_power_usage_print: 'Energieverbrauch zurücksetzen'
+  tip_confirm_reset_power_usage: 'Möchten Sie den Energieverbrauch zurücksetzen?'
+  t_auto_off: 'Automatische Abschaltung:'
+  t_power_off_all: 'Möchten Sie die Drucker in der Gruppe ausschalten, die an PWR gebunden sind?'
+  t_pwr_has_been_bind: 'Dieses PWR ist bereits an den Drucker %s gebunden. Bitte lösen Sie die Bindung, bevor Sie diese Aktion ausführen.'
+  tip_pwr_max: 'Panda Touch unterstützt derzeit bis zu %d Panda PWR.'
+  t_power_off_after_printing: 'Automatische Abschaltung'
+#NEW ADD END
