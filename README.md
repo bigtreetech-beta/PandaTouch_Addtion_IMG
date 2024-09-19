@@ -1,13 +1,7 @@
 lv_i18n - Internationalization for LittlevGL
 
 本工具是基于lvgl提供的lv_i18n修改而来，用于生成IMG文件，IMG文件可以由new_panda.png和自定义语言包组成。
-
-## 快速使用
-以windows为例，开始之前请将PandaTouch更新到V1.0.6 及以上版本
-
-1. 安装node.js环境
-2. 生成IMG文件
-
+  
 ## 安装node.js环境
 
 请在官网下载安装包，安装在windows上
