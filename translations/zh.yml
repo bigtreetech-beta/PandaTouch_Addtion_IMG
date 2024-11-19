@@ -1,0 +1,565 @@
+zh-cn:
+#SETTING PAGE
+  lang_name_t: '中文'
+
+  min_time_t_1: '1分'
+  min_time_t_2: '2分'
+  min_time_t_3: '3分'
+  min_time_t_5: '5分'
+  min_time_t_10: '10分'
+  min_time_t_15: '15分'
+  min_time_t_60: '60分'
+  sleep_time_t_always: '始终开启'
+
+  setting_gen_t: '通用'
+  setting_net_t: '网络'
+  setting_gen_t_dev: '设备：'
+  setting_gen_t_man: '制造商：'
+  setting_gen_t_lang: '语言：'
+  setting_gen_t_fw: '固件版本：'
+  setting_gen_t_slp: '自动休眠时间：'
+  setting_gen_t_backlight: '背光亮度：'
+  setting_gen_t_reb: '重启'
+  setting_gen_t_rst: '恢复出厂设置'
+#SETTING PAGE END
+
+#BUTTONS
+  btn_cancel: '取消'
+  btn_ok: '确定'
+  btn_restart: '重启'
+  btn_refresh: '刷新'
+  btn_confirm: '确认'
+  btn_next: '下一步'
+  btn_back: '返回'
+  btn_del: '删除'
+  btn_scan: '扫描'
+  btn_factory: '恢复出厂'
+  btn_close: '关闭'
+  btn_ignore_all: '忽略全部'
+  btn_load: '进料'
+  btn_unload: '退料'
+  btn_retry: '重试'
+  btn_abort: '终止'
+  btn_print: '打印'
+  btn_remove: '移除'
+  btn_stop: '停止'
+  btn_pause: '暂停'
+  btn_resume: '继续'
+  btn_filament: '耗材'
+  btn_done: '完成'
+  btn_stop_all: '全部停止'
+  btn_format: '格式化'
+  btn_disconnect: '断开连接'
+  btn_edit: '编辑'
+  btn_yes: '是'
+  btn_no: '否'
+  btn_reset: '重置'
+  btn_add_printer: '添加打印机'
+  btn_add_group: '添加组'
+  btn_goto_printers: '转到多设备页面'
+  btn_goto_wifi: '转到Wi-Fi页面'
+  btn_ignore: '忽略'
+  btn_goto_login: '转到登录页面'
+  btn_dry: '烘干'
+  btn_dry_prepare: '准备'
+  btn_dry_start: '开始烘干'
+#BUTTONS END
+
+  set_net_wifi_scaned: '可用 WiFi'
+  welcome_tip: '请点击右侧的 WiFi，然后输入密码连接。如果列表中没有想要连接的 WiFi，可以点击刷新重新扫描可用 WiFi。连接到 WiFi 后点击下一步。'
+  tip_scan_qrcode: '使用手机扫描二维码可访问在线手册。'
+  loading: '加载中...' 
+  top_wifi_connect: '正在连接 WiFi %s'
+  top_wifi_connect_fail: '连接 WiFi 失败： %s'
+  top_wifi_disconnected: '已断开 WiFi： %s'
+  top_print_connecting: '正在连接打印机 %d： %s'
+  top_print_connected: '打印机 %d：%s 已成功连接'
+  top_print_connect_fail: '连接打印机 %d：%s 失败'
+#PRINT
+  panda_touch: 'Panda Touch'
+  printer_model: '型号：'
+  printer_name: '名称：'
+  scan_print_t_acescd: '配对码：'
+  scan_print_t_ip: '打印机 IP：'
+  filament_t_color: '耗材颜色：'
+  filament_t_matrl: '耗材材质：'
+  nozzle_t_diameter: '喷嘴直径：'
+  nozzle_t_matrl: '喷嘴材质：'
+  wifi_c_wait_cancel: '等待任务取消...'
+  print_bed_leveling: '热床调平'
+  print_flow_calibration: '流量校准'
+  print_timelapse: '延时摄影'
+  prints_in_sync: '打印机同步：%d'
+  start_print_confirm: |
+   在开始打印之前，请注意以下事项：
+   1. 确保打印文件是为此机型切片的。
+   2. 确保切片文件中的耗材设置与加载到AMS槽位中的耗材匹配。
+  print_using_ams: '使用 AMS'
+  print_ams: '外挂料盘'
+  print_canceled: '已取消'
+  print_finished: '已完成'
+  print_reprint: '重新打印'
+  bed_preheating: '热床正在预热'
+  nozzle_clean: '正在清理喷嘴'
+  bed_auto_leveing: '自动调平'
+  print_preparing: '准备打印'
+  print_t: '打印机'
+  print_not_find: '找不到打印机，请检查网络并重新扫描'
+  filament_unknown: '耗材类型未知，但执行此操作需要耗材的信息。是否要编辑耗材的信息?'
+  printer_add_repeat: '此打印机已添加到Panda Touch，无法再次添加。'
+  printer_has_add: '已添加'
+  printer_busy: |
+   
+   
+   正在打印中
+  nozzle_temperature: '喷嘴温度'
+  bambu_info_readonly: '拓竹耗材的信息存储在RFID中，并且是只读的。'
+  setting_slot_not_sup: '不支持在打印过程中设置槽位信息'
+  filament_minimum: '最低'
+  filament_maximum: '最高'
+  filament_unknown_type: '未知'
+#PRINT
+
+#TIPS
+  tip_input_optional: '(选填)'
+  tip_input_name: '(必填)设置打印机名称'
+  tip_input_ip: '(必填)输入 IP'
+  tip_input_acescd: '(必填)输入配对码'
+  tip_input_sn: '(必填)输入 SN'
+  pop_tip_add_dev: '请确认是否添加此打印机配置。'
+  pop_tip_restart: '请确认是否需要重启。'
+  pop_tip_input_password: '请输入密码'
+  pop_tip_factory: '请确认是否需要恢复出厂设置。设备将遗忘已连接 WiFi 密码以及所有保存的打印机参数，并且会在确认后自动重启。'
+  new_tip_get_info: '如何获取 IP、配对码以及 SN'
+  pop_tip_print_abort: '请确认是否中止当前和后续的上传和打印任务。'
+  tip_not_insert_sdcard: 'MicroSD卡未插入打印机。'
+  tip_not_insert_usb_flash: 'U盘未插入。'
+  tip_not_select_print: '没有选择打印机，请至少选择一个打印机进行打印。'
+  tip_remove_refuse: '只能删除 “断开连接” 的打印机，请在删除之前 “断开连接”'
+  tip_remove_confirm: '请确认是否要删除此打印机。'
+  tip_master_must: '必须要有一个打印机作为 “主机”'
+  tip_mainly_query: '只能有一个打印机作为 “主机”。 是否要设置此台打印机为 “主机” 并且将之前旧的 “主机” 设置为 “仅监听”'
+  tip_printer_max: 'Panda Touch 目前最多支持连接 %d 台打印机'
+  tip_pause_all: '是否要暂停所有的打印任务?'
+  tip_stop_all: '停止打印后不能恢复，是否要停止所有的打印任务?'
+  tip_faild_upload: |
+   上传文件失败，请检查以下内容：
+   1.打印机是否正确插入SD卡，并且SD卡是否有足够的容量。
+   2.确保U盘已牢固的插入到 Panda Touch 中。
+   3.搬到 WiFi 信号更好的地方。
+   4.云模式时，请检查并重新编辑“IP”或“配对码”。
+  tip_wifi_disconnected: '当前 WiFi 连接已经断开，请检查网络环境。'
+  tip_wifi_error: '连接 WiFi 失败，请检查信号强度或者密码后再重连。'
+  tip_unload_has_filament: '请将外挂料盘上的耗材从挤出机中拔出，或检查挤出机中是否有耗材断裂，如果稍后要使用AMS，请将PTFE管连接到耦合器上。'
+  tip_unload_has_filament_l: '请将外挂料盘上的耗材从挤出机中拔出，或检查挤出机中是否有耗材断裂，如果以后要使用AMS，请将PTFE管连接到耦合器上，然后单击 “重试” 按钮。'
+  tip_load_no_filament: '请从外挂料盘插入耗材，直到触发工具头耗材传感器。'
+  tip_load_no_filament_l: '请从外挂料盘插入耗材，直到触发工具头耗材传感器，然后单击 “重试” 按钮。'
+  tip_load_filament: '请观察喷嘴。如果已挤出耗材，请单击 “完成”；如果没有，请稍微向前推动耗材，然后单击 “重试”'
+  tip_heatbreak_fan: '喉管散热风扇转速异常。'
+  tip_parsing_gcode: '解析gcode.3mf时出现问题。请重新发送打印任务。'
+  tip_nozzle_temp_malf: '喷嘴温度异常。'
+  tip_front_cover: '由于工具头的前盖脱落，打印暂停。请将工具头装回原处，然后单击继续按钮继续打印任务。'
+  tip_filament_runout: '耗材已用尽。请在“耗材”中加载新耗材，然后点击 “继续” 以继续打印任务。'
+  tip_pause_print: '是否要暂停打印?'
+  tip_stop_print: '停止打印后无法恢复打印，是否要停止打印?'
+  tip_ams_runout: 'AMS耗材已用尽。请将新耗材插入AMS，然后单击 “重试” 按钮。'
+  tip_ams_overload: 'AMS辅助电机过载。请检查线轴或耗材是否卡住。故障排除后，单击“重试”按钮。'
+  tip_failed_feed: '未能将耗材送入工具头，请检查耗材或线轴是否卡住，故障排除后，单击“重试”按钮。'
+  tip_failed_pull: '未能挤出耗材，请检查挤出机是否堵塞或挤出机内部的耗材是否断裂，故障排除后，单击“重试”按钮。'
+  tip_failed_extrude: '未能挤出耗材，请检查挤出机是否堵塞，故障排除后，单击“重试”按钮。'
+  tip_failed_feed_outside: '未能在AMS外部供给耗材。请将耗材的末端夹住，检查线轴是否卡住。故障排除后，单击“重试”按钮。'
+  tip_select_model: '请选择打印机的型号'
+  tip_ams_busy: '无法读取耗材信息，AMS正忙请稍后再试。'
+  tip_ams_reading: 'AMS正在读取耗材信息，请稍后再试。'
+  tip_ams_tray_empty: '此托盘没有耗材，请插入耗材后重试。'
+  tip_firmware: '请扫描二维码查看已发布的固件历史记录以及如何更新固件。'
+#TIPS END
+
+#NOTIFY
+  notify_center_t: '通知中心'
+  notify_cnt_t: '通知数量：'
+  notify_remind: '请扫描二维码查看可能的解决方案，或单击 “转到打印机” 按钮将此打印机设置为 “主机”'
+  notify_remind_go_print: '转到打印机'
+  notify_unknow_state: 'Panda Touch未知状态码'
+  
+  00x0300100000020001: '%s轴共振频率偏低，可能是同步带松了。' 
+  00x0300100000020002: '%s轴共振频率与上次校准有很大差异。'
+  00x03000F0000010001: '加速度计数据不可用。'
+  00x03000D000001000B: 'Z轴电机在上升过程被卡住，请检查 Z滑块、Z同步带轮是否有异物卡住。'
+  00x03000D0000010003: '构建板未放置到正确位置，请重新放置。'
+  00x03000D0000010004: '构建板未放置到正确位置，请重新放置。'
+  00x03000D0000010005: '构建板未放置到正确位置，请重新放置。'
+  00x03000D0000010006: '构建板未放置到正确位置，请重新放置。'
+  00x03000D0000010007: '构建板未放置到正确位置，请重新放置。'
+  00x03000D0000010008: '构建板未放置到正确位置，请重新放置。'
+
+  00x03000D0000010009: '构建板未放置到正确位置，请重新放置。'
+  00x03000D000001000A: '构建板未放置到正确位置，请重新放置。'
+  00x03000D0000020001: '热床回零异常。'
+  00x03000A0000010005: '热床的 %s 号压力传感器在检测到异常持续外力，可能是被卡住或发生了电路损坏。'
+  00x03000A0000010004: '测试压力传感器 %s 灵敏度时检测到外部干扰。热床板可能接触到热床外的东西。'
+  00x03000A0000010003: '热床压力传感器 %s 灵敏度太低'
+  00x03000A0000010002: '热床压力传感器 %s 灵敏度低。'
+  00x03000A0000010001: '热床压力传感器 %s 灵敏度过高。'
+  00x0300040000020001: '部件冷却风扇转速过低或停转，可能被杂物卡住或已损坏。'
+  00x0300030000020002: '热端风扇转速慢。'
+
+  00x0300030000010001: '热端风扇转速过低或停转，可能被杂物卡住或已损坏。'
+  00x0300060000010001: '%s 电机断路，可能是连接器没插紧或电机故障。'
+  00x0300060000010002: '电机-%s 短路。它可能出现故障了'
+  00x0300060000010003: '电机-%s 电阻异常，可能是电机故障。'
+  00x0300010000010007: '热床温控异常，温度传感器可能开路。'
+  00x0300130000010001: '电机-%s 电流传感器异常。这可能是硬件采样电路故障引起的。'
+  00x0300180000010005: 'Z轴电机在移动过程被卡住，请检查 Z滑块、Z同步带轮是否有异物卡住'
+  00x0300190000010001: 'Y轴电涡流传感器没有读到数据，可能线路断路。'
+  00x0300190000020002: 'Y轴电涡流传感器灵敏度偏低。'
+  00x0300400000020001: '串口数据传输异常；软件系统可能有故障。'
+   
+  00x0300410000010001: '系统电压不稳定；触发电源故障保护功能。'
+  00x0300020000010001: '喷嘴温度异常，加热器可能短路。'
+  00x0300020000010002: '喷嘴温度异常，加热器可能开路。'
+  00x0300020000010003: '喷嘴温度异常，加热器过温。'
+  00x0300020000010006: '喷嘴温度异常，传感器可能短路。'
+  00x0300020000010007: '喷嘴温控异常，温度传感器可能开路。'
+  00x0300120000020001: '工具头前盖脱落。'
+  00x0300180000010001: '挤出力传感器数值过低，可能没有安装喷嘴。'
+  00x0300180000010002: '挤出力传感器灵敏度偏低，可能喷嘴未安装到位。'
+  00x0300180000010003: '无法读取挤出力传感器数据，MC和TH之间的连接可能断开或传感器损坏。'
+
+  00x0300180000010004: '挤出力传感器数据异常，可能传感器开路或者TH板异常。'
+  00x03001A0000020001: '喷嘴被耗材包裹或热床放歪。'
+  00x03001A0000020002: '挤出力传感器检测到喷嘴堵塞。'
+  00x0C00010000010001: '微型激光雷达相机离线。'
+  00x0C00010000020002: '微型激光雷达相机发生故障。'
+  00x0C00010000010003: '微型激光雷达同步异常。'
+  00x0C00010000010004: '微型激光雷达镜头脏污。'
+  00x0C00010000010005: '微型激光雷达OTP参数异常。'
+  00x0C00010000020006: '微型激光雷达外部参数异常。'
+  00x0C00010000020007: '微型激光雷达激光参数漂移。'
+
+  00x0C00010000020008: '机箱摄像头离线。'
+  00x0C00010000010009: '机箱摄像头镜头脏污。'
+  00x0C0001000001000A: '激光雷达LED灯可能坏了。'
+  00x0C0001000002000B: '激光雷达校准失败。'
+  00x0C00020000010001: '激光不亮。'
+  00x0C00020000020002: '激光过粗。'
+  00x0C00020000020003: '激光不够亮。'
+  00x0C00020000020004: '喷嘴太低。'
+  00x0C00020000010005: '检测到新的微型激光雷达。'
+  00x0C00020000020006: '喷嘴太高。'
+
+  00x0C00030000020001: '由于该材料的反光太弱，料线自动测光失败，本次首层质量检查可能不准确。'
+  00x0C00030000020002: '由于激光雷达数据异常，首层检测终止。'
+  00x0C00030000020004: '当前打印模式暂不支持首层质量检查。'
+  00x0C00030000020005: '首层检测超时。'
+  00x0C00030000030006: '冲刷的耗材堆积。'
+  00x0C00030000030007: '可能存在首层缺陷。'
+  00x0C00030000030008: '可能发生炒面缺陷。'
+  00x0C00030000010009: '首层检测模块重启。'
+  00x0C0003000003000B: '首层检查中。'
+  00x0C0003000002000C: '没有检测到打印板定位标记，请检查打印板是否正确放置。'
+
+  00x0500010000020001: '媒体管道出现故障。'
+  00x0500010000020002: 'USB摄像头未连接。'
+  00x0500010000020003: 'USB 摄像头出现故障。'
+  00x0500010000030004: 'SD卡空间不足。'
+  00x0500010000030005: 'SD卡错误。'
+  00x0500010000030006: 'SD卡未格式化。'
+  00x0500020000020001: '无法连接互联网，请检查网络连接。'
+  00x0500020000020005: '无法连接互联网，请检查网络连接。'
+  00x0500020000020002: '登录设备失败。'
+  00x0500020000020004: '未经授权的用户。'
+  00x0500020000020006: '实时视频服务出现故障。'
+
+  00x0500030000010001: 'MC 模块出现故障，请重新启动设备。'
+  00x0500030000010002: '工具头发生故障，请重新启动设备。'
+  00x0500030000010003: 'AMS模块出现故障。请重新启动设备。'
+  00x050003000001000A: '系统状态异常，请恢复出厂设置。'
+  00x050003000001000B: '屏幕出现故障。'
+  00x050003000002000C: '无线硬件错误：请关闭/打开WiFi或者重新启动设备。'
+  00x0500040000010001: '打印作业下载失败，请检查您的网络连接。'
+  00x0500040000010002: '打印状态报告失败，请检查您的网络连接。'
+  00x0500040000010003: '打印文件内容无法读取，请重新发送打印作业。'
+  00x0500040000010004: '打印文件未经授权。'
+  00x0500040000010006: '无法恢复之前的打印任务。'
+  
+  00x0500040000020007: '床层温度超过耗材的玻璃化转变温度，这可能会导致喷嘴堵塞。'
+  00x0700010000010001: 'AMS%s 辅助电机打滑。挤出轮可能磨损，或者耗材可能太细。'
+  00x0700010000010003: 'AMS%s 辅助电机扭矩控制异常。电流传感器可能故障。'
+  00x0700010000010004: 'AMS%s 辅助电机速度控制异常。转速传感器可能故障。'
+  00x0700010000020002: 'AMS%s 辅助电机过载，可能是料线缠绕或卡住了。'
+  00x0700020000010001: 'AMS%s 耗材速度和长度错误。耗材里程计可能有故障。'
+  00x0700100000010001: 'AMS%s 槽位%s 电机打滑。挤出轮可能出现故障，或者耗材可能太细。'
+  00x0700100000010003: 'AMS%s 槽位%s 电机扭矩控制异常。电流传感器可能故障。'
+  00x0700100000020002: 'AMS%s 槽位%s 电机过载。可能是料线缠绕或卡住了。'
+  00x0700200000020001: 'AMS%s 槽位%s 耗材用尽。'
+
+  00x1200200000020001: 'AMS%s 槽位%s 耗材用尽。'
+  00x0700200000020002: 'AMS%s 槽位%s 为空。'
+  00x0700200000020003: 'AMS%s 槽位%s 的耗材可能断裂在AMS内。'
+  00x0700200000020004: 'AMS%s 槽位%s 的耗材可能断在工具头。'
+  00x0700200000020005: 'AMS%s 槽位%s 耗材用尽，清除旧耗材异常；请检查耗材是否卡在工具头上。'
+  00x0700200000030001: 'AMS%s 槽位%s 耗材用尽。请稍候，正在冲刷旧耗材。'
+  00x0700200000030002: 'AMS%s 槽位%s 耗材用尽，并自动切换到具有相同耗材的槽位。'
+  00x0700400000020001: '耗材缓冲信号丢失，电缆或信号传感器可能出现故障。'
+  00x0700400000020002: '耗材缓冲器位置信号错误，位置传感器可能出现故障。'
+  00x0700400000020003: 'AMS集线器通信异常，电缆可能连接不好。'
+  00x0700400000020004: '缓冲区信号异常，弹簧可能被卡住了。'
+
+  00x0700450000020001: '耗材切割器传感器出现故障。传感器可能未连接或损坏。'
+  00x0700450000020002: '耗材切刀切割距离过大，XY电机可能会丢步。'
+  00x0700450000020003: '切刀刀柄未松开，刀柄或刀片可能被卡住。'
+  00x0700510000030001: 'AMS被禁用；请从外挂料盘上装入耗材。'
+  00x0700500000020001: 'AMS%s 通信异常，请检查连接电缆。'
+  00x0700600000020001: 'AMS%s 槽位%s 电机过载，耗材可能缠料或料盘卡住。'
+  00x1200100000020002: 'AMS%s 槽位%s 电机过载，耗材可能缠结或卡住。'
+  00x1200800000020001: 'AMS%s 槽位%s 耗材缠绕或者卡住。'
+  00x07FF200000020001: '外挂耗材用尽，请装入新的耗材。'
+  00x07FF200000020002: '未发现外部挂载的耗材；请装入新的耗材。'
+  00x07FF200000020004: '请将盘支架上的耗材丝拉出工具头。'
+
+  00x12FF200000020007: '检查工具头耗材位置失败，请点击获取更多帮助。'
+  00x1200200000020006: '挤出AMS%s 槽位%s 的耗材失败，可能是挤出机堵塞，或者是耗材过细，导致挤出机打滑。'
+  00x1200200000030002: 'AMS%s 料槽%s 料线用完并已自动切换到有相同料线的料槽。'
+#NOTIFY END
+
+#CONTROL
+  ctl_top_t_temp_axis: '温度/轴移动'
+  ctl_top_t_filament: '耗材'
+  ctl_t_part: '部件'
+  ctl_t_aux: '辅助'
+  ctl_t_chamber: '机箱'
+  sw_t_on: '开启'
+  sw_t_off: '关闭'
+  ctl_t_speed: '打印速度'
+  ctl_t_speed_silent: '静音'
+  ctl_t_speed_standard: '标准'
+  ctl_t_speed_sport: '运动'
+  ctl_t_speed_ludicrous: '狂暴'
+  ctl_t_extruder: '挤出机'
+  ctl_t_temp_high: '不能高于 %ld℃'
+  ctl_t_filament_t_tip: '提示'
+  ctl_t_filament_tip: '进料前请确保将耗材已推入挤出头。'  
+  ctl_t_to_load: '进料'
+  ctl_t_to_unload: '退料'
+  ctl_t_heat_nozzle_temp: '加热喷嘴'
+  ctl_t_push_new_filament: '插入新的耗材到挤出机'
+  ctl_t_grab_new_filament: '挤出机抓取新的耗材'
+  ctl_t_purge_old_filament: '清除旧的耗材'
+  ctl_t_cut_filament: '切断耗材'
+  ctl_t_back_filament: '抽出当前的耗材'
+  content_empty: '空'
+  tpu_not_supported: 'AMS不支持 “%s %s”。'
+  cf_gf_warning: '“%s %s” 耗材又硬又脆。很容易断或卡在AMS中；请谨慎使用。'
+  pva_warning: '潮湿的 “%s %s” 将变得柔软并卡在AMS内；使用前请注意烘干。'
+  
+  #CONTROL END
+
+#MQTT
+  ctl_t_mqtt_ctl_mode: '控制模式'
+  ctl_t_mqtt_statu_master: '主机'
+  ctl_t_mqtt_statu_slave: '从机'
+  ctl_t_mqtt_status_sync: '仅监听'
+  ctl_t_mqtt_disconected: '断开连接'
+  printer_connecting: '打印机当前正在连接中。'
+  printer_disconnected: '打印机已断开连接。'
+  printer_connected: '打印机已连接成功。'
+  mqtt_login_failed: |
+   无法连接到打印机!
+   可能是 “配对码” 错误。点击 “编辑”，检查并重新编辑 “配对码”。
+   请扫描二维码查看可能的解决方案。
+  mqtt_never_connected: |
+   无法连接到打印机!
+   请确保打印机已通电，并且与 Panda Touch 处于同一局域网，或者点击 “编辑” 检查并重新编辑 “IP” 和 “SN”。
+   请扫描二维码查看可能的解决方案。
+  mqtt_master_changed: |
+   无法连接到打印机!
+   请确保打印机已通电，并且与 Panda Touch 处于同一局域网，或者点击 “编辑” 检查并重新编辑 “IP” 和 “SN”。
+   由于这是 “主机”，组中的另一台打印机将被临时分配为 “主机”。
+   如果已关闭此打印机电源，请忽略此消息。
+   请扫描二维码查看可能的解决方案。
+  mqtt_master_error: |
+   无法连接到打印机!
+   请确保打印机已通电，并且与 Panda Touch 处于同一局域网，或者点击 “编辑” 检查并重新编辑 “IP” 和 “SN”。
+   由于这是 “主机”，并且组中没有其他连接的打印机可用，因此在解决此问题之前，您将无法使用 Panda Touch。
+   请扫描二维码查看可能的解决方案。
+  mqtt_slave: |
+   无法连接到打印机!
+   请确保打印机已通电，并且与 Panda Touch 处于同一局域网，或者点击 “编辑” 检查并重新编辑 “IP” 和 “SN”。
+   此打印机不是 “主机”，它将无法访问或跟随“主机”。
+   如果已关闭打印机电源，请忽略此消息。
+   请扫描二维码查看可能的解决方案。
+  mqtt_not_online: |
+   无法连接到打印机!
+   请确保打印机已通电，并且与 Panda Touch 处于同一局域网。
+   请扫描二维码查看可能的解决方案。
+#MQTT END
+
+#FILE 
+  file_t_usb_flash_driver: 'U盘'
+  file_t_name: '名称'
+  file_t_date: '日期'
+  file_t_size: '大小'
+  file_s_transmitting: '传输中'
+  file_s_printers_in_sync: '打印机同步：%d/%d'
+  file_s_failed: '失败'
+  file_s_printing: '打印中'
+  file_s_waiting: '等待中'
+#FILE END         
+#GUID
+  guid_t_start: '开始'
+  guid_c_start: '点亮 Bambu lab 的原装屏幕'
+  guid_t_get_ip_access: '获取 IP 和配对码'
+  guid_c_get_ip_access_wlan: '使用屏幕上的按键选择网络， 然后点击 “OK” 进入。'
+  guid_c_get_ip_access_enter: '在 Panda Touch 相应的输入框中输入 IP 和配对码。'
+  guid_t_get_sn: '获取 SN'
+  guid_c_get_sn_return: '按下返回键回到设置页面。'
+  guid_c_get_sn_enter: '使用屏幕上的按键选择设备，然后点击 “OK” 进入。'
+  guid_c_get_sn_enter_code: '这就是 SN 码，请在 Panda Touch 相应的输入框中输入它。'
+  guid_t_completed: |
+   ; )
+   恭喜您完成了Panda Touch教程。请尽情体验它的功能!
+  guid_c_completed: '点击屏幕空白区域，返回连接界面。然后输入打印机的信息'
+  sn: 'SN：'
+  guid_unable_find: '找不到打印机设置？'
+  guide_select_lang: '请选择你的 Panda Touch 使用语言'
+  guide_ota_not_finished: 'OTA 尚未完成'
+  guide_ota_remind: |
+   请使用在同一 WiFi 网络下的计算机（它可以是运行IOS或者Android等操作系统的计算机或者移动设备。以下将其称为“计算机”）
+    • 在计算机浏览器中输入 Panda Touch 的 IP 地址访问 web UI，然后单击 “Update File” 按钮。
+    • 单击 “选择文件” 按钮，然后选择此前下载的 .img 文件。
+    • Panda Touch 将自动开始更新。
+  guid_ota_connect_wifi: |
+   PandaTouch 当前无法连接至 WiFi
+   请点击右侧的 WiFi 网络并输入密码来连接 WiFi。如果未显示您想要连接的网络，请点击 “刷新” 按钮。 
+  #其他 简体中文 英始终开启分 
+#GUID END
+
+#CLOUD START
+  tip_about_region: '在登陆之前请先选择区域，区域应该与账户相对应。'
+  tip_del_account: '是否需要删除账号？PandaTouch将绑定账号的打印机转为本地通信。'
+  tip_input_phone: '请输入手机号' 
+  tip_input_email: '请输入邮箱地址' 
+  #tip_input_password: '请输入密码'
+  t_region: '区域：'
+  t_account: '账号：'
+  t_password: '验证码：'
+  t_region_china: '中国'
+  t_region_global: '全球'
+  tip_phone_incorrect: '请输入有效的手机号' 
+  tip_email_incorrect: '请输入有效的邮箱地址' 
+  tip_account_not_reg: '登陆失败，账号未注册。'
+  tip_password_incorrect: '登陆失败，密码错误。'
+  tip_network_error: '登陆失败，网络异常。'
+  tip_login_ok: |
+   登录云服务器成功！
+   
+   是否要将所有现有打印机转换为云模式？仅当您未在“LAN模式”下使用任何打印机时才选择“是”。如果您在“LAN模式”下使用打印机，请通过编辑通信设置将每个打印机手动添加到云中。
+  tip_account_sync_ok: '打印机已成功转换为云模式。您可以在多设备页面中查看每台打印机的当前通信状态。'
+  tip_account_sync_error: '某些打印机无法转换为云模式。请检查您的WiFi和云模式设置，然后重试。'
+  tip_account_sync_zero: '当前帐户中没有云打印机。请将打印机添加到此帐户，然后再次登录。'
+  tip_printer_without_cloud: '此打印机尚未绑定到该账号。在启用云之前，请使用BambuLab Studio或Handy添加打印机。'
+  tip_printer_login_account: '请先登录一个账号。'
+  tip_account_error: '您的帐户出现问题。请检查您的帐户名否有任何更改。此外，请验证您的帐户区域是否与当前位置匹配。'
+  tip_account_network_error: '您的网络连接出现问题。请检查网络密码是否已更改，然后尝试重新连接以恢复打印机的云连接。'
+  t_login_bambu: '登录拓竹账号'
+  tip_convert_to_cloud: '正在将此账号下的打印机转换为云模式。请稍候。'
+  t_enable_could: '云模式'
+  tip_wifi_not_connected: 'Wi-Fi连接已断开，请先连接Wi-Fi。'
+  tip_printer_work_in_cloud: '打印机工作在云模式。'
+  tip_printer_work_in_local: '打印机工作在局域网模式。'
+  tip_ftp_ip_invalid: '请确保与打印机在同一局域网，检查并重新编辑 “IP”或“配对码”。'
+  tip_ftp_not_find: '未找到.3mf文件。'
+  tip_group_printer_cloud_mode: '打印机 %d：%s工作在云模式。' 
+  tip_group_printer_local_mode: '打印机 %d：%s工作在局域网模式。' 
+  tip_group_work_in_cloud: '打印机组工作在云模式。'
+  tip_group_work_in_local: '打印机组工作在局域网。'
+#CLOUD END
+
+#NEW ADD
+  tip_printer_group_max: 'Panda Touch 目前最多支持 %d 个打印机组'
+  tip_one_master_at_least: '打印机组必须保留一台打印机为主机。' 
+  tip_one_select_at_least: |
+   打印机组至少要保留一台主机.
+   如需删除此打印机组，请在打印机选择界面操作。
+  tip_remove_group_confirm: '请确认是否要删除此打印机组。'
+  tip_group_same_name: '已存在相同的组名称，请重命名。'
+  tip_printer_in_group: '打印机被添加到了组，请先在组内删除。'
+  tip_reprint_group_printer: '这将只在这台打印机上重新打印文件。如果您想在组中的所有打印机上开始打印，请等待所有打印机完成并使用正常过程开始打印。'
+  tip_reprint_printer: '是否要在这台打印机重新打印文件？'
+  tip_waiting_print_finished: '在开始新的打印任务之前请停止当前的打印任务。'
+  tip_group_connected: '打印机组已连接成功。'
+  tip_group_printer_disconnected: '打印机 %d：%s 已断开连接。' 
+  tip_group_printer_connecting: '打印机 %d：%s 正在连接中。'
+  tip_group_printer_printing: '打印机 %d：%s 正在打印中。'
+  tip_group_printer_temp_too_high: '打印机 %d：%s 热端温度 %d ℃。'
+  tip_group_printer_file_config: '是否要打印 %s 文件？请选择您需要开启的打印功能。'
+  tip_group_power_off: '是否要关闭组内打印机？'
+  tip_group_reset_power_usage: '是否要清除组内绑定了PWR的打印机用电量？'
+  tip_group_power_off_not_online: '组中有打印机已断开连接，请确认是否要继续关闭电源？'
+  tip_group_printing_not_idle: '组中有打印机正在打印，如关闭打印机可能会导致堵塞，请等待热端冷却后关闭打印机电源，是否要继续？'
+  tip_group_temp_too_high_confirm: '组中有打印机热端温度超过50度，如关闭打印机可能会导致堵塞，请等待热端冷却后关闭打印机电源，是否要继续？'
+  t_is_printing: '正在打印'
+  t_is_idle: '空闲'
+  tip_enter_group_name: '请输入组名称：'
+  tip_move_confirm: '该打印机\打印机组正在打印中，无法进行移动操作。' 
+  tip_always_sleep: '该设置可能会对屏幕有损坏，是否要继续？' 
+  tip_bind_power: | 
+   请长按Panda PWR按键至蓝灯闪烁，并将Panda Touch贴至Panda PWR上以连接。
+  tip_remove_keep_one: '请至少保留一台打印机'
+  tip_remove_printer_with_power: '该打印机绑定了PWR，是否要继续删除？'
+  tip_about_power: |
+   Panda PWR
+   智能自动关闭、实时功率监控、功耗跟踪、双USB-A接口设计，请扫描二维码了解更多信息。
+  tip_power_off_not_online_confirm: '打印机断开连接，请确认是否要关闭打印机电源？'
+  tip_power_off_temp_too_high_confirm: '检测到热端温度超过50C，如关闭打印机可能会导致堵塞，请等待热端冷却后关闭打印机电源，是否要继续？'
+  tip_power_off_confirm: '请确认是否要关闭打印机电源？'
+  tip_auto_power_off_confirm: '打印完成后，喷嘴温度低于50度，打印机将自动关闭。'
+  t_auto_power_off: '自动断电:'
+  t_min: '分钟'
+  t_countdown: '倒计时:'
+  t_power: '电源' 
+  tip_know_power: '什么是Panda PWR'
+  tip_add_power: '添加Panda PWR'
+  t_voltage: '电 压:'
+  t_current: '电 流:'
+  t_power_2: '功 率:'
+  t_power_usage: '用 电 量:'
+  t_printer: '打印机-主机:'
+  t_power_wifi: 'Wifi 名称:'
+  t_power_usb_follow: 'USB1 跟随打印机灯光:'
+  t_usb_config_off: '关闭'
+  t_usb_config_on: '打开' 
+  t_must_high: '输入值必须大于 %ld' 
+  t_must_less: '输入值必须小于 %ld'
+  t_power_printer_no: '序号' 
+  tip_confirm_bind_power: '是否接受来自Panda PWR的绑定？' 
+  tip_confirm_unbind_power: '是否要解除与Panda PWR的绑定？'  
+  t_reset_power_usage: | 
+   清除
+   用电量
+  t_reset_power_usage_print: '清除用电量' 
+  tip_confirm_reset_power_usage: '是否要清除用电量？' 
+  t_auto_off: '自动断电'
+  t_power_off_all: '是否关闭组中绑定了PWR的打印机？'
+  t_pwr_has_been_bind: '此PWR已被打印机 %s 绑定,请先解除绑定后再进行该操作。'
+  tip_pwr_max: 'Panda Touch 目前最多支持连接 %d 台 Panda PWR。'
+  t_power_off_after_printing: '自动断电'
+  tip_change_reboot: '为了更好的速度体验，需重启后才会生效，是否要继续？' 
+  t_multi_print_heat_delay: '多台打印加热延迟'
+  t_file_t_history: '打印历史'
+  t_history_cost_time: '所需时间'
+  t_history_weight: '重量'
+  t_history_only_cloud: '仅支持云模式'
+  t_history_not_find: '未找到'
+  t_default_directory: 'Printer-默认文件夹' 
+  t_reboot_take_effect: '该设置需要重启后生效，是否要继续？' 
+  t_send_code: '发送验证码' 
+  tip_send_code: '输入验证码'  
+  tip_error_code_length: '验证码应该是6位' 
+  tip_error_code: '验证码不存在或已过期 请发送一个新的验证码' 
+  tip_error_send_code: '发送验证码失败，请检查网络' 
+  tip_loading_thumbnail: '正在加载数据，请稍后'  
+  t_sd_enhanced_load_thumbnails: '加强从SD卡显示缩略图'
+  tip_enhanced_load_effect: '在SD卡面板操作或者从U盘发起打印会有比较长时间的延时，并且重启后生效，是否继续？' 
+#NEW ADD END 

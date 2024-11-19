@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH3SURBVDhPjZP7S1NhGMf3LwX+CdkMKSoI+rUSIvtBWRaE0XXMITq0WoRzyzRy67ataIFTN9O2HMHMbeRl6+w4z3bczrYE3aVJ39737cQu5wR+4MBze7/PeS+PBi2s3b6L1ORz2auTfDKG7zf6Za+OQiB08jQ2jYPMjvVdR1TXx+z44BC+nj3H7EaaBLZsE4j26iDYHUi/dSLtdCHjciP9xglh2oFoj47VNNIksLsawcKRNgSPHcduJIqf4RUE2rWoSnkE2ztYjtY0otgC99CMfS5JFocROKrFcucJFJdDLEZzrSgEtqxPwY/bmM1bbdh+Yf9rkxjNtaIQoKxevoKVC12QFpcg+fwIn7/IYmqoClSyWfx4ZEZu3oecdxaJkVEWU0NVYI/jkBh9gJx/gYjMIz5sImfAydlm1P9AkrBhGIDgeEmuz471+3pUC3k524xCoCLuYP3OPfCWccSHTEiYRpAcsyBGHlQpyctVdRQCVdK9nNpGpKeXvcLY1WvsAH8VizgoleSqOqpboOzFEygLafIJ2Ffp/I//ChwWjfDqNbIzXuQ/LSI3Owfx3Xuknk1B/OBBxulGIRBkcyGRPG+xMpvOB11TEUVo6IjS6ft2qZs9nt+1GqSlz+QWjMxfu3kLoVNnWDfR8xFfOjrBmR9jc8CIDb0BfwD8apdGwrf2kwAAAABJRU5ErkJggg==" />
+    <title>PandaTouch IMG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            color: #333;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px; 
+            position: relative;
+        }
+        #langSelector {
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            width: 120px; /* 固定宽度 */
+            
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+        label {
+            margin-top: 20px;
+            display: block;
+        }
+        select, input[type="file"], button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #preview {
+            margin-top: 20px;
+            display: none;
+            text-align: center;
+        }
+        #preview img {
+            max-width: 100%;
+            height: auto;
+        }
+        #error-message {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+        #note {
+            margin-top: 20px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- 语言选择框 -->
+    <select id="langSelector">
+        <option value="en" selected>English</option>
+        <option value="zh">中文</option> 
+        <option value="de">Deutsch</option>
+        <option value="ja">日本語</option>
+        <option value="es">Español</option>
+    </select>
+
+    <h1 id="title">Panda Touch IMG Generate</h1> 
+
+    <label id="ymlLabel" for="imageInput">Select YML file</label>
+    <input type="file" id="ymlFile" accept=".yml">
+ 
+    <label id="pngLabel" for="newPandaInput">Select new_panda png file</label>
+    <input type="file" id="pngFile" accept="image/png">
+
+    <!-- 预览 PNG 文件 -->
+    <div id="preview">
+        <h2 id="previewTitle">预览图片:</h2>
+        <img id="previewImage" alt="PNG 预览">
+    </div>
+
+    <div id="error-message"></div>
+
+    <!-- 新增提示 -->
+    <p id="note">
+        请注意：生成的img文件将配置默认的熊猫PNG，如您此前修改过该PNG，请在此项中再次上传以生成带有您个性化图片的img文件
+    </p>
+
+    <button id="submit">Generate</button>
+    <button id="submit_fat">Generate fat</button>
+    <P>firmware:V1.0.6</P>
+    <div id="output" style="margin-top: 20px;"></div>
+
+    <script>
+        // 语言切换功能
+        const langSelector = document.getElementById('langSelector');
+        const translations = {
+            en: {
+                title: "Panda Touch IMG Generate",
+                ymlLabel: "Select YML file",
+                pngLabel: "Select new_panda png file",
+                previewTitle: "Preview Image",
+                generateButton: "Generate",
+                generateButton_fat: "Generate fat",
+                generateSuccess: "Generate succeeded!",
+                noFilesSelected: "You need to select at least one YML or PNG file",
+                missingPng: "No panda PNG file uploaded, we will use the default panda. Do you want to continue?",
+                missingYml: "No YML file uploaded, we will use the default language pack. Do you want to continue?",
+                imageTooLarge: "Image exceeds allowed dimensions: Width > 280px or Height > 306px",
+                note: "Note: The generated img file will be configured with the default panda PNG. If you have modified the panda image before, please upload it again here to generate an img file with your personalized image."
+            },
+            zh: {
+                title: "Panda Touch IMG 生成器",
+                ymlLabel: "选择YML文件",
+                pngLabel: "选择new_panda PNG文件",
+                previewTitle: "预览图片",
+                generateButton: "生成",
+                generateButton_fat: "生成 fat",
+                generateSuccess: "生成成功！",
+                noFilesSelected: "您需要至少选择一个YML文件或PNG文件",
+                missingPng: "您未上传熊猫PNG文件，我们将为您生成带有默认熊猫的文件，是否继续？",
+                missingYml: "您未上传语言YML文件，我们将使用默认语言包，是否继续？",
+                imageTooLarge: "图片尺寸超出限制：宽度 > 280px 或高度 > 306px",
+                note: "请注意：生成的img文件将配置默认的熊猫PNG，如您此前修改过该PNG，请在此项中再次上传以生成带有您个性化图片的img文件。"
+            },
+            de: {
+                title: "Panda Touch IMG erstellen",
+                ymlLabel: "Wählen Sie die YML-Datei aus",
+                pngLabel: "Wählen Sie die new_panda PNG-Datei aus",
+                previewTitle: "Bildvorschau",
+                generateButton: "Erstellen",
+                generateButton_fat: "Erstellen fat",
+                generateSuccess: "Erstellung erfolgreich!",
+                noFilesSelected: "Sie müssen mindestens eine YML- oder PNG-Datei auswählen",
+                missingPng: "Es wurde keine Panda-PNG-Datei hochgeladen. Wir verwenden den Standard-Panda. Möchten Sie fortfahren?",
+                missingYml: "Es wurde keine YML-Datei hochgeladen. Wir verwenden das Standard-Sprachpaket. Möchten Sie fortfahren?",
+                imageTooLarge: "Bild überschreitet die zulässigen Abmessungen: Breite > 280px oder Höhe > 306px",
+                note: "Bitte beachten Sie: Die generierte IMG-Datei wird mit dem Standard-Panda-PNG konfiguriert. Wenn Sie das Panda-Bild zuvor geändert haben, laden Sie es bitte hier erneut hoch, um eine IMG-Datei mit Ihrem personalisierten Bild zu erstellen."
+            },
+            ja: {
+                title: "パンダタッチIMG生成",
+                ymlLabel: "YMLファイルを選択",
+                pngLabel: "new_panda PNGファイルを選択",
+                previewTitle: "画像プレビュー",
+                generateButton: "生成",
+                generateButton_fat: "生成 fat",
+                generateSuccess: "生成に成功しました！",
+                noFilesSelected: "YMLファイルまたはPNGファイルのいずれかを選択する必要があります",
+                missingPng: "パンダのPNGファイルがアップロードされていません。デフォルトのパンダを使用します。続行しますか？",
+                missingYml: "YMLファイルがアップロードされていません。デフォルトの言語パックを使用します。続行しますか？",
+                imageTooLarge: "画像の寸法が許可されている寸法を超えています：幅 > 280px または 高さ > 306px",
+                note: "注意：生成されたIMGファイルはデフォルトのパンダPNGで構成されます。以前にパンダの画像を変更した場合は、ここで再度アップロードして、パーソナライズされた画像でIMGファイルを生成してください。"
+            },
+            es: {
+                title: "Generar IMG de Panda Touch",
+                ymlLabel: "Seleccionar archivo YML",
+                pngLabel: "Seleccionar archivo new_panda PNG",
+                previewTitle: "Vista previa de la imagen",
+                generateButton: "Generar",
+                generateButton_fat: "Generar fat",
+                generateSuccess: "¡Generación exitosa!",
+                noFilesSelected: "Debe seleccionar al menos un archivo YML o PNG",
+                missingPng: "No se ha subido ningún archivo PNG de panda. Utilizaremos el panda predeterminado. ¿Desea continuar?",
+                missingYml: "No se ha subido ningún archivo YML. Utilizaremos el paquete de idioma predeterminado. ¿Desea continuar?",
+                imageTooLarge: "La imagen supera las dimensiones permitidas: Ancho > 280px o Altura > 306px",
+                note: "Tenga en cuenta: El archivo IMG generado se configurará con el PNG de panda predeterminado. Si ha modificado la imagen de panda antes, cárguela nuevamente aquí para generar un archivo IMG con su imagen personalizada."
+            }
+        };
+
+        // 切换语言文本
+        function updateTextContent(selectedLang) {
+            document.getElementById('title').innerText = translations[selectedLang].title;
+            document.getElementById('ymlLabel').innerText = translations[selectedLang].ymlLabel;
+            document.getElementById('pngLabel').innerText = translations[selectedLang].pngLabel;
+            document.getElementById('previewTitle').innerText = translations[selectedLang].previewTitle;
+            document.getElementById('submit').innerText = translations[selectedLang].generateButton;
+            document.getElementById('submit_fat').innerText = translations[selectedLang].generateButton_fat;
+            document.getElementById('note').innerText = translations[selectedLang].note;
+        }
+
+        langSelector.addEventListener('change', (event) => {
+            const selectedLang = event.target.value;
+            updateTextContent(selectedLang);
+        });
+
+        // 检查PNG文件的大小
+        function checkImageDimensions(img) {
+            const selectedLang = langSelector.value;
+            const langText = translations[selectedLang];
+
+            if (img.width > 280 || img.height > 306) {
+                const errorMessage = document.getElementById('error-message');
+                errorMessage.innerText = langText.imageTooLarge;
+                errorMessage.style.display = 'block';
+                return false;
+            }
+            return true;
+        }
+
+        // 预览 PNG 文件并检查大小
+        document.getElementById('pngFile').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const errorMessage = document.getElementById('error-message');
+            errorMessage.style.display = 'none'; // 隐藏错误信息
+            if (file) {
+                const reader = new FileReader();
+                const img = new Image();
+                reader.onload = function(e) {
+                    img.src = e.target.result;
+                    img.onload = function() {
+                        if (checkImageDimensions(img)) {
+                            document.getElementById('preview').style.display = 'block';
+                            document.getElementById('previewImage').src = e.target.result;
+                        } else {
+                            document.getElementById('pngFile').value = ""; // 清空文件选择
+                        }
+                    };
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // 生成按钮点击事件
+        document.getElementById('submit_fat').addEventListener('click', async () => {
+            const ymlFileInput = document.getElementById('ymlFile');
+            const pngFileInput = document.getElementById('pngFile');
+
+            let proceed = true;
+            const selectedLang = langSelector.value;
+            const langText = translations[selectedLang];
+            let file_name = 'fat_';
+            
+            console.log("submit_fat selectedLang="+selectedLang);
+
+            // 如果没有选择任何文件，提示用户选择文件
+            if (ymlFileInput.files.length === 0 && pngFileInput.files.length === 0) {
+                alert(langText.noFilesSelected);
+                return;
+            }
+
+            // 如果只选择了YML文件，提示用户
+            if (ymlFileInput.files.length > 0 && pngFileInput.files.length === 0) {
+                proceed = confirm(langText.missingPng);
+                /*选择了YML 但是没有选择PNG则使用默认的 panda*/
+                file_name = file_name + 'default'+'_panda.img';
+            } else if (pngFileInput.files.length > 0 && ymlFileInput.files.length === 0) {
+                proceed = confirm(langText.missingYml);
+                /*选择了PNG 但是没有选择yml则使用默认的yml*/
+                file_name = file_name+'default_'+selectedLang+'.img';
+            }
+
+            if (!proceed) {
+                return;
+            }
+
+            const ymlFile = ymlFileInput.files[0] || null;
+            const pngFile = pngFileInput.files[0] || null;
+
+            const ymlData = ymlFile ? await readFileAsBase64(ymlFile) : null;
+            const pngData = pngFile ? await readFileAsBase64(pngFile) : null;
+
+            const response = await fetch('/generate_fat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    default_lang:selectedLang,
+                    ymlData: ymlData,
+                    pngData: pngData
+                })
+            });
+
+            const outputDiv = document.getElementById('output');
+            if (response.ok) {
+                const imgArrayBuffer = await response.arrayBuffer();
+                outputDiv.innerHTML = `<p>${langText.generateSuccess}</p>`;
+                downloadImageFromArrayBuffer(imgArrayBuffer, file_name);
+            } else {
+                const result = await response.json();
+                outputDiv.innerHTML = `<p style="color: red;">${result.stack}</p>`;
+            }
+        });
+
+                // 生成按钮点击事件
+            document.getElementById('submit').addEventListener('click', async () => {
+            const ymlFileInput = document.getElementById('ymlFile');
+            const pngFileInput = document.getElementById('pngFile');
+
+            let proceed = true;
+            const selectedLang = langSelector.value;
+            const langText = translations[selectedLang];
+            let file_name = 'addition_';
+
+            console.log("submit selectedLang="+selectedLang);
+
+            // 如果没有选择任何文件，提示用户选择文件
+            if (ymlFileInput.files.length === 0 && pngFileInput.files.length === 0) {
+                alert(langText.noFilesSelected);
+                return;
+            }
+
+            // 如果只选择了YML文件，提示用户
+            if (ymlFileInput.files.length > 0 && pngFileInput.files.length === 0) {
+                proceed = confirm(langText.missingPng); 
+                file_name = file_name + 'panda.img';
+            } else if (pngFileInput.files.length > 0 && ymlFileInput.files.length === 0) {
+                proceed = confirm(langText.missingYml); 
+                file_name = file_name +selectedLang+'.img';
+            }
+
+            if (!proceed) {
+                return;
+            }
+
+            const ymlFile = ymlFileInput.files[0] || null;
+            const pngFile = pngFileInput.files[0] || null;
+
+            const ymlData = ymlFile ? await readFileAsBase64(ymlFile) : null;
+            const pngData = pngFile ? await readFileAsBase64(pngFile) : null;
+
+            const response = await fetch('/generate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    default_lang:selectedLang,
+                    ymlData: ymlData,
+                    pngData: pngData
+                })
+            });
+
+            const outputDiv = document.getElementById('output');
+            if (response.ok) {
+                const imgArrayBuffer = await response.arrayBuffer();
+                outputDiv.innerHTML = `<p>${langText.generateSuccess}</p>`;
+                downloadImageFromArrayBuffer(imgArrayBuffer, file_name);
+            } else {
+                const result = await response.json();
+                outputDiv.innerHTML = `<p style="color: red;">${result.stack}</p>`;
+            }
+        });
+
+        function readFileAsBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onloadend = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+        }
+
+        function downloadImageFromArrayBuffer(arrayBuffer, fileName) {
+            const blob = new Blob([arrayBuffer], { type: 'application/octet-stream' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+
+        // 页面加载时根据当前语言初始化文本内容
+        document.addEventListener("DOMContentLoaded", function() {
+            const initialLang = langSelector.value;
+            updateTextContent(initialLang);
+        });
+    </script>
+</body>
+</html>
