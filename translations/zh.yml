@@ -63,6 +63,7 @@ zh-cn:
   btn_dry: '烘干'
   btn_dry_prepare: '准备'
   btn_dry_start: '开始烘干'
+  btn_skip_obj: '零件跳过'
 #BUTTONS END
 
   set_net_wifi_scaned: '可用 WiFi'
@@ -562,4 +563,15 @@ zh-cn:
   tip_loading_thumbnail: '正在加载数据，请稍后'  
   t_sd_enhanced_load_thumbnails: '加强从SD卡显示缩略图'
   tip_enhanced_load_effect: '在SD卡面板操作或者从U盘发起打印会有比较长时间的延时，并且重启后生效，是否继续？' 
+  tip_not_higher: '不能超过 %d' 
+  tip_dry_step1: '#%x 步骤1:# 清空热床上部和底部，避免热床运动时干涉；将耗材退出工具头，避免堵头风险。' 
+  tip_dry_step2: '#%x 步骤2:# 单击“准备”按钮将工具头和热床移动到预设位置。' 
+  tip_dry_step3: '#%x 步骤3:# 如图所示，将耗材放置在热床上。（盖上盖子可确保更好的效果，盖子可用PC打印或包装盒）。' 
+  tip_dry_step4: '#%x 步骤4:# 选择耗材类型，设置热床温度和烘干时间，单击“开按钮。（烘干中途翻面可确保更好的效果）。' 
+  tip_dry_completed: '烘干已完成。'
+  tip_dry_not_support: '不支持 A1, A1-mini, P1P。'  
+  tip_dry_printer_printing: '打印机正在打印中。'
+  tip_skip_obj_selected: '#ff0000 %d# 个零件被选中'
+  tip_dry_ing: '烘干中'
+  tip_dry_prepare_ok: '准备完成，请查看打印机工具头是否回到预设位置后点击开始。'
 #NEW ADD END 
