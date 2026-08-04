@@ -102,16 +102,18 @@ app.post('/generate_fat', (req, res) => {
         
         console.log("get_offset="+get_offset);
 
-        // 计算总内存大小
-        const totalSize = get_offset + img_buffer.length;
+        // Stream the FAT base, sector-alignment padding, and generated IMG.
+        // The complete response is larger than Vercel's buffered response limit.
+        res.setHeader('Content-Type', 'application/octet-stream');
+        res.setHeader('Content-Disposition', 'attachment; filename="PandaTouch-custom.img"');
+        res.write(fatFileBuffer);
 
-        // 创建内存缓冲区并复制数据
-        const fat_buffer = Buffer.alloc(totalSize);
-        fatFileBuffer.copy(fat_buffer, 0); // 复制 fat.img 内容到缓冲区起始位置
-        img_buffer.copy(fat_buffer, get_offset); // 将 img_buffer 数据复制到偏移位置
+        const paddingSize = get_offset - fatFileSize;
+        if (paddingSize > 0) {
+            res.write(Buffer.alloc(paddingSize));
+        }
 
-        // 发送生成的 fat_buffer
-        res.send(fat_buffer); // 直接发送 Buffer 数据 
+        res.end(img_buffer);
     } catch (error) {
         res.status(500).json({
             message: error.message || 'An unexpected error occurred',
